@@ -158,6 +158,11 @@ footer a:hover { color: var(--fg); }
 .legal .updated { font-size: 13px; margin-top: 8px; }
 .legal strong { color: var(--fg); }
 
+/* Never let a wide child push the page sideways on phones. */
+html, body { overflow-x: hidden; max-width: 100%; }
+.wrap, .wrap > * { min-width: 0; }
+.hero .wrap > div, .screens figure, .feature, .step, .plan { min-width: 0; max-width: 100%; }
+
 @media (max-width: 900px) {
   .hero .wrap { grid-template-columns: 1fr; text-align: center; }
   .hero .lead { margin-left: auto; margin-right: auto; }
@@ -165,4 +170,10 @@ footer a:hover { color: var(--fg); }
   .screens { grid-template-columns: repeat(2, 1fr); }
   .features, .steps, .plans { grid-template-columns: 1fr; }
   .nav a:not(.lang) { display: none; }
+}
+
+@media (max-width: 480px) {
+  .btn { white-space: normal; height: auto; min-height: 56px; padding: 14px 22px; text-align: center; }
+  .hero .cta { flex-direction: column; align-items: stretch; }
+  .screens { grid-template-columns: 1fr 1fr; gap: 16px; }
 }
