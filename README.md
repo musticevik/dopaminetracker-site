@@ -1,12 +1,28 @@
 # dopaminetracker.site
 
-Static marketing site for Dopamine Tracker, published with GitHub Pages.
-No build step: every file in this repo is served as-is.
+Static marketing site for Dopamine Tracker, published with GitHub Pages
+(custom domain `dopaminetracker.site`, HTTPS enforced). No server-side build:
+every committed file is served as-is.
 
-- `index.html` Turkish home, `en/index.html` English home
-- `gizlilik/`, `en/privacy/` privacy policy (linked from Google Play)
-- `assets/site.css` shared styles, `assets/img/screens/*.png` app screenshots (540×1200)
-- `CNAME` custom domain, `sitemap.xml`, `robots.txt`
+## Editing
 
-Replace screenshots by dropping new PNGs with the same names into
-`assets/img/screens/` and pushing.
+- Copy, numbers, prices, testimonials, flags: `assets/config.js` (single source of truth).
+- Layout: `_src/landing.template.html`; styles: `assets/site.css` (design system),
+  `assets/story.css`, `assets/landing.css`; scroll animations: `assets/landing.js`.
+- After changing the template or `config.js`, regenerate the two pages:
+
+  ```
+  python _src/build.py
+  ```
+
+  This writes `index.html` (Turkish) and `en/index.html` (English) with the
+  copy baked in for SEO. Commit the generated files together with the source.
+
+- Privacy policy: `gizlilik/index.html`, `en/privacy/index.html` (hand-written).
+- Screenshots: `assets/img/screens/{home,analytics,block,focus,account}.jpg`, 973×2048.
+
+## Flags
+
+`stats.showImpact` in `config.js` hides the "Impact so far" and "Time is the
+real currency" scenes until `usersHelped` and `hoursReclaimed` are real,
+measured numbers. Never publish invented metrics.

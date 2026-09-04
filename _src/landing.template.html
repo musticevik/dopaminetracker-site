@@ -1,43 +1,43 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{LANG}}">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dopamine Tracker: Screen Time Tracker and App Blocker for Android</title>
-<meta name="description" content="See your real screen time, set daily limits on Instagram, TikTok and other apps, and stop them from opening once the limit is reached. Free Android app against phone addiction.">
-<link rel="canonical" href="https://dopaminetracker.site/en/">
+<title>{{TITLE}}</title>
+<meta name="description" content="{{DESC}}">
+<link rel="canonical" href="{{CANON}}">
 <link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/">
 <link rel="alternate" hreflang="en" href="https://dopaminetracker.site/en/">
 <link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/en/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dopamine Tracker">
-<meta property="og:title" content="Dopamine Tracker: Take back your time.">
-<meta property="og:description" content="See where your screen time goes and take control of it. Free on Android.">
-<meta property="og:url" content="https://dopaminetracker.site/en/">
+<meta property="og:title" content="{{OG_TITLE}}">
+<meta property="og:description" content="{{OG_DESC}}">
+<meta property="og:url" content="{{CANON}}">
 <meta property="og:image" content="https://dopaminetracker.site/assets/img/og.png">
-<meta property="og:locale" content="en_US">
+<meta property="og:locale" content="{{OG_LOCALE}}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0f0f14">
-<link rel="icon" href="../assets/img/icon.png">
-<link rel="apple-touch-icon" href="../assets/img/icon.png">
+<link rel="icon" href="{{P}}assets/img/icon.png">
+<link rel="apple-touch-icon" href="{{P}}assets/img/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../assets/site.css">
-<link rel="stylesheet" href="../assets/story.css">
-<link rel="stylesheet" href="../assets/landing.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "Dopamine Tracker", "operatingSystem": "Android", "applicationCategory": "LifestyleApplication", "url": "https://dopaminetracker.site/en/", "installUrl": "https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker", "image": "https://dopaminetracker.site/assets/img/icon.png", "description": "Per-app screen time, a daily dopamine score from 0 to 100, and the apps that take most of your day. Measured on your phone. It never leaves it.", "offers": [{"@type": "Offer", "price": "0", "priceCurrency": "TRY"}, {"@type": "Offer", "name": "Pro monthly", "price": "59.99", "priceCurrency": "TRY"}, {"@type": "Offer", "name": "Pro yearly", "price": "289.99", "priceCurrency": "TRY"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is app blocking free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A daily limit per app and closing an app completely on chosen days are free for everyone. A block lasts until midnight."}}, {"@type": "Question", "name": "What does Pro add?", "acceptedAnswer": {"@type": "Answer", "text": "Unlocking a block for today or loosening a limit, a strict focus mode that cannot be cancelled, and an unbreakable block that cannot be lifted even on Pro."}}, {"@type": "Question", "name": "Where does my screen time data go?", "acceptedAnswer": {"@type": "Answer", "text": "Per-app usage never leaves your phone. Only your onboarding answers and subscription status sync with your account."}}, {"@type": "Question", "name": "Which permissions are needed?", "acceptedAnswer": {"@type": "Answer", "text": "Usage access to measure screen time; display over other apps so the block screen can appear. Optional Do Not Disturb access to silence notifications during focus sessions."}}, {"@type": "Question", "name": "Is there an iPhone version?", "acceptedAnswer": {"@type": "Answer", "text": "Android only for now. App blocking relies on Android's usage access API."}}]}]}</script>
+<link rel="stylesheet" href="{{P}}assets/site.css">
+<link rel="stylesheet" href="{{P}}assets/story.css">
+<link rel="stylesheet" href="{{P}}assets/landing.css">
+<script type="application/ld+json">{{JSONLD}}</script>
 </head>
 <body>
 <header class="top" id="top">
 <div class="wrap">
-<a class="brand" href="../en/"><img src="../assets/img/icon.png" alt="" width="32" height="32">Dopamine Tracker</a>
+<a class="brand" href="{{P}}{{HOME_SUFFIX}}"><img src="{{P}}assets/img/icon.png" alt="" width="32" height="32">Dopamine Tracker</a>
 <nav class="nav" aria-label="Site">
 <a href="#product" data-i="nav_product">Product</a>
 <a href="#how" data-i="nav_how">How it works</a>
-
+<!--IMPACT_NAV--><a href="#impact" data-i="nav_impact">Impact</a><!--/IMPACT_NAV-->
 <a href="#download" data-i="nav_download">Download</a>
-<div class="lang-switch" role="group" aria-label="Language"><a href="../" hreflang="tr" lang="tr">TR</a><a href="../en/" hreflang="en" lang="en" class="is-active">EN</a></div>
+<div class="lang-switch" role="group" aria-label="Language">{{LANG_SWITCH}}</div>
 <a class="btn primary" data-dl href="https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker" rel="noopener" data-i="nav_cta">Get the App</a>
 </nav>
 </div>
@@ -68,13 +68,23 @@
 </div>
 <p class="note" id="pNote" data-i="prob_note">Small daily numbers. Large yearly ones.</p>
 </div>
-<div class="rig"><div class="phone" id="heroPhone"><img class="is-front" src="../assets/img/screens/home.jpg" width="973" height="2048" alt="Dopamine Tracker home: today's dopamine score and screen time" fetchpriority="high"><img src="../assets/img/screens/analytics.jpg" width="973" height="2048" alt="Analytics: weekly screen time chart and categories" loading="lazy"></div></div>
+<div class="rig"><div class="phone" id="heroPhone"><img class="is-front" src="{{P}}assets/img/screens/home.jpg" width="973" height="2048" alt="{{ALT_HOME}}" fetchpriority="high"><img src="{{P}}assets/img/screens/analytics.jpg" width="973" height="2048" alt="{{ALT_ANALYTICS}}" loading="lazy"></div></div>
 </div>
 <div class="scroll-hint" id="hint"><span data-i="scroll" style="width:auto;height:auto;background:none;animation:none">Scroll</span><span></span></div>
 </div>
 </section>
 
-
+<!--IMPACT--><section class="scene impact-scene" id="impact" data-scene="impact">
+<div class="stage">
+<div class="center">
+<p class="eyebrow accent" data-i="imp_eyebrow">Impact so far</p>
+<div class="giant" id="impN">0</div>
+<div class="giant-l" id="impL"></div>
+<div class="dot-grid" id="dots" aria-hidden="true"></div>
+<p class="sub" data-i="imp_sub">Every dot is one person.</p>
+</div>
+</div>
+</section><!--/IMPACT-->
 
 <section class="scene feat-scene story" id="product" data-scene="features">
 <div class="stage story-stage" data-chapter="0">
@@ -86,7 +96,7 @@
 <div class="chapter"><p class="num" data-i="f3_num">03 · Build momentum</p><h2 data-i="f3_h2">Small changes. Massive difference.</h2><p class="lead" data-i="f3_p">A daily goal for social media, a streak that grows every day you stay under it, and focus sessions that silence notifications.</p></div>
 </div>
 <div class="feat-rig">
-<div class="phone" id="featPhone"><img class="is-front" src="../assets/img/screens/analytics.jpg" width="973" height="2048" alt="Analytics: weekly screen time chart and categories" loading="lazy"><img src="../assets/img/screens/block.jpg" width="973" height="2048" alt="Block: apps with daily limits" loading="lazy"><img src="../assets/img/screens/home.jpg" width="973" height="2048" alt="Dopamine Tracker home: today's dopamine score and screen time" loading="lazy"></div>
+<div class="phone" id="featPhone"><img class="is-front" src="{{P}}assets/img/screens/analytics.jpg" width="973" height="2048" alt="{{ALT_ANALYTICS}}" loading="lazy"><img src="{{P}}assets/img/screens/block.jpg" width="973" height="2048" alt="{{ALT_BLOCK}}" loading="lazy"><img src="{{P}}assets/img/screens/home.jpg" width="973" height="2048" alt="{{ALT_HOME}}" loading="lazy"></div>
 <div class="viz" id="viz1"><p class="t" data-i="viz1_t">Today · top apps</p><div class="bars" id="bars"></div></div>
 <div class="viz" id="viz2"><p class="t" data-i="viz2_t">Instagram · daily limit</p><div class="ring"><svg viewBox="0 0 170 170"><circle class="bg" cx="85" cy="85" r="76"></circle><circle class="fg" id="ringFg" cx="85" cy="85" r="76"></circle></svg><div class="c"><b id="ringV">0m</b><span data-i="viz2_used">used</span></div></div><p class="state" data-i="viz2_blocked">Blocked until midnight</p></div>
 <div class="viz trend" id="viz3"><p class="t" data-i="viz3_t">Social media · last 14 days</p><svg viewBox="0 0 260 110" id="trendSvg"><defs><linearGradient id="tg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2ECC71" stop-opacity=".35"></stop><stop offset="1" stop-color="#2ECC71" stop-opacity="0"></stop></linearGradient></defs><g class="grid"><line x1="0" y1="20" x2="260" y2="20"></line><line x1="0" y1="55" x2="260" y2="55"></line><line x1="0" y1="90" x2="260" y2="90"></line></g><path class="area" id="trendArea"></path><path id="trendLine"></path></svg><div class="streak"><span class="d" id="streakDots"></span><span class="s"><b id="streakN">0</b> <span data-i="viz3_streak">day streak</span></span></div></div>
@@ -116,18 +126,30 @@
 </div>
 </section>
 
-
+<!--IMPACT--><section class="scene cur-scene" data-scene="currency" id="curScene">
+<div class="stage">
+<div class="center">
+<p class="eyebrow accent" data-i="cur_eyebrow">Time is the real currency</p>
+<h2 style="font-size:clamp(28px,3.4vw,48px);margin-bottom:28px" data-i="cur_h2">Hours are abstract. Days are not.</h2>
+<div class="giant green" id="curN">0</div>
+<div class="giant-l" id="curL"></div>
+<div class="cal" id="cal" aria-hidden="true"></div>
+<div class="months" id="months" aria-hidden="true"></div>
+<p class="sub" data-i="cur_sub">Each square is one full day, given back.</p>
+</div>
+</div>
+</section><!--/IMPACT-->
 
 <section class="scene show-scene" data-scene="showcase">
 <div class="stage">
 <div class="glow g" style="opacity:.7"></div>
 <div class="show-head"><p class="eyebrow" data-i="show_eyebrow">The app</p><h2 data-i="show_h2">Everything, one thumb away.</h2></div>
 <div class="orbit" id="orbit">
-<div class="phone main" id="mainPhone"><img class="is-front" src="../assets/img/screens/home.jpg" width="973" height="2048" alt="Dopamine Tracker home: today's dopamine score and screen time" loading="lazy"><img src="../assets/img/screens/analytics.jpg" width="973" height="2048" alt="Analytics: weekly screen time chart and categories" loading="lazy"><img src="../assets/img/screens/block.jpg" width="973" height="2048" alt="Block: apps with daily limits" loading="lazy"><img src="../assets/img/screens/focus.jpg" width="973" height="2048" alt="Focus session timer" loading="lazy"><img src="../assets/img/screens/account.jpg" width="973" height="2048" alt="Account: goals and progress" loading="lazy"></div>
-<div class="phone sat" data-k="0"><img class="is-front" src="../assets/img/screens/analytics.jpg" width="973" height="2048" alt="" loading="lazy"></div><p class="cap" data-k="0" data-i="sc_analytics">Weekly statistics</p>
-<div class="phone sat" data-k="1"><img class="is-front" src="../assets/img/screens/block.jpg" width="973" height="2048" alt="" loading="lazy"></div><p class="cap" data-k="1" data-i="sc_block">App blocking</p>
-<div class="phone sat" data-k="2"><img class="is-front" src="../assets/img/screens/focus.jpg" width="973" height="2048" alt="" loading="lazy"></div><p class="cap" data-k="2" data-i="sc_focus">Focus sessions</p>
-<div class="phone sat" data-k="3"><img class="is-front" src="../assets/img/screens/account.jpg" width="973" height="2048" alt="" loading="lazy"></div><p class="cap" data-k="3" data-i="sc_account">Goals & progress</p>
+<div class="phone main" id="mainPhone"><img class="is-front" src="{{P}}assets/img/screens/home.jpg" width="973" height="2048" alt="{{ALT_HOME}}" loading="lazy"><img src="{{P}}assets/img/screens/analytics.jpg" width="973" height="2048" alt="{{ALT_ANALYTICS}}" loading="lazy"><img src="{{P}}assets/img/screens/block.jpg" width="973" height="2048" alt="{{ALT_BLOCK}}" loading="lazy"><img src="{{P}}assets/img/screens/focus.jpg" width="973" height="2048" alt="{{ALT_FOCUS}}" loading="lazy"><img src="{{P}}assets/img/screens/account.jpg" width="973" height="2048" alt="{{ALT_ACCOUNT}}" loading="lazy"></div>
+<div class="phone sat" data-k="0"><img class="is-front" src="{{P}}assets/img/screens/analytics.jpg" width="973" height="2048" alt="" loading="lazy"></div><p class="cap" data-k="0" data-i="sc_analytics">Weekly statistics</p>
+<div class="phone sat" data-k="1"><img class="is-front" src="{{P}}assets/img/screens/block.jpg" width="973" height="2048" alt="" loading="lazy"></div><p class="cap" data-k="1" data-i="sc_block">App blocking</p>
+<div class="phone sat" data-k="2"><img class="is-front" src="{{P}}assets/img/screens/focus.jpg" width="973" height="2048" alt="" loading="lazy"></div><p class="cap" data-k="2" data-i="sc_focus">Focus sessions</p>
+<div class="phone sat" data-k="3"><img class="is-front" src="{{P}}assets/img/screens/account.jpg" width="973" height="2048" alt="" loading="lazy"></div><p class="cap" data-k="3" data-i="sc_account">Goals &amp; progress</p>
 </div>
 </div>
 </section>
@@ -156,7 +178,7 @@
 <section id="voices">
 <div class="wrap">
 <div class="section-head reveal"><p class="eyebrow" data-i="test_eyebrow">What people say</p><h2 data-i="test_h2">From the people who use it.</h2></div>
-<div class="quotes reveal" id="quotes"><figure class="quote"><span class="bar"></span><span class="stars" aria-label="5 / 5">★★★★★</span><p>“It really helped me cut down my screen time. When I use the app I can fully focus on what I am doing. Having a focus mode is a great feature, and the design makes it very comfortable to use.”</p><figcaption class="who"><span class="av">O</span>Orçun Ç. · Google Play</figcaption></figure><figure class="quote"><span class="bar"></span><span class="stars" aria-label="5 / 5">★★★★★</span><p>“Such a lovely app. Seeing data about my screen time right from the start, and the way it presents the information, was a pleasure.”</p><figcaption class="who"><span class="av">İ</span>İrem B. G. · Google Play</figcaption></figure></div>
+<div class="quotes reveal" id="quotes">{{QUOTES}}</div>
 </div>
 </section>
 
@@ -181,7 +203,7 @@
 <p data-i="final_p">You need more control over the time you already have.</p>
 <a class="btn primary" data-dl href="https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 2.4c-.3.3-.5.8-.5 1.4v16.4c0 .6.2 1.1.5 1.4l.1.1 9.2-9.2v-.2L3.7 2.3l-.1.1zm12.3 12.3L12.9 12v-.2l3-3 .1.1 3.6 2c1 .6 1 1.6 0 2.2l-3.6 2-.1.1zm-.1.1-3-3-9.2 9.2c.3.4.9.4 1.5 0l10.7-6.2zm0-6.4L5.1 2.2c-.6-.4-1.2-.3-1.5 0l9.2 9.2 3-3z"></path></svg><span data-i="cta_download">Download Dopamine Tracker</span></a>
 </div>
-<div class="rig"><div class="phone" id="finalPhone"><img class="is-front" src="../assets/img/screens/home.jpg" width="973" height="2048" alt="Dopamine Tracker home: today's dopamine score and screen time" loading="lazy"></div></div>
+<div class="rig"><div class="phone" id="finalPhone"><img class="is-front" src="{{P}}assets/img/screens/home.jpg" width="973" height="2048" alt="{{ALT_HOME}}" loading="lazy"></div></div>
 </div>
 </section>
 </main>
@@ -189,10 +211,10 @@
 <footer>
 <div class="wrap">
 <div>© 2026 Dopamine Tracker</div>
-<div><a id="privacyLink" href="./privacy/" data-i="foot_privacy">Privacy policy</a><a href="../">Türkçe</a><a data-dl href="https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker" rel="noopener" data-i="foot_play">Google Play</a></div>
+<div><a id="privacyLink" href="{{PRIVACY_HREF}}" data-i="foot_privacy">Privacy policy</a><a href="{{OTHER_HREF}}">{{OTHER_LABEL}}</a><a data-dl href="https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker" rel="noopener" data-i="foot_play">Google Play</a></div>
 </div>
 </footer>
-<script src="../assets/config.js"></script>
-<script src="../assets/landing.js"></script>
+<script src="{{P}}assets/config.js"></script>
+<script src="{{P}}assets/landing.js"></script>
 </body>
 </html>
