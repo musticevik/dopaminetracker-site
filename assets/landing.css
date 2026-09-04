@@ -141,6 +141,7 @@ a:hover{color:var(--fg)}
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.8,.2,1)}
 .reveal.in{opacity:1;transform:none}
 .plan .price small{margin-left:6px}
+.plan .price .on-play{font-family:var(--body);font-size:16px;font-weight:800;color:var(--green)}
 .quotes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:40px 32px}
 .quote{display:grid;gap:14px;align-content:start;margin:0}
 .quote .bar{height:3px;width:44px;background:var(--green);border-radius:2px}

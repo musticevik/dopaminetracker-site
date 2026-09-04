@@ -15,10 +15,13 @@ every committed file is served as-is.
   python _src/build.py
   ```
 
-  This writes `index.html` (Turkish) and `en/index.html` (English) with the
-  copy baked in for SEO. Commit the generated files together with the source.
+  This writes `index.html` (English, x-default, with a client-side geo/language
+  redirect to `/tr/` for Turkish visitors) and `tr/index.html` (Turkish) with
+  the copy baked in for SEO. English shows USD prices, Turkish shows TRY; a
+  `null` price in `config.js` renders "see the price on Google Play". Commit the generated files together with the source.
 
-- Privacy policy: `gizlilik/index.html`, `en/privacy/index.html` (hand-written).
+- Privacy policy: `privacy/index.html` (EN), `tr/gizlilik/index.html` (TR), hand-written.
+- `en/`, `en/privacy/`, `gizlilik/` are redirect stubs for the v1 URLs.
 - Screenshots: `assets/img/screens/{home,analytics,block,focus,account}.jpg`, 973×2048.
 
 ## Flags

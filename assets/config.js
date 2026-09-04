@@ -5,8 +5,8 @@
 window.DT_CONFIG = {
   appName: 'Dopamine Tracker',
   downloadUrl: 'https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker',
-  privacyUrl: { en: 'https://dopaminetracker.site/en/privacy/', tr: 'https://dopaminetracker.site/gizlilik/' },
-  defaultLang: 'tr',
+  privacyUrl: { en: 'https://dopaminetracker.site/privacy/', tr: 'https://dopaminetracker.site/tr/gizlilik/' },
+  defaultLang: 'en',
 
   /* Product metrics. Derived values (per user, days, months, weekly, yearly) are computed on the page.
      showImpact gates the "Impact so far" and "Time is the real currency" scenes: keep it false until
@@ -31,7 +31,13 @@ window.DT_CONFIG = {
   /* Feature 3 visualization: 14 days of social media minutes, streak days under goal. */
   trend: { minutes: [188, 176, 181, 162, 150, 158, 141, 128, 132, 117, 104, 98, 91, 84], streak: 7 },
 
-  pricing: { monthly: 59.99, yearly: 289.99, currency: 'TRY' },
+  /* Prices per currency, as set in Play Console. The English page shows USD, the Turkish page TRY.
+     A null amount renders "see the price on Google Play" instead of a number — never guess a price. */
+  currencyFor: { en: 'USD', tr: 'TRY' },
+  pricing: {
+    TRY: { monthly: 59.99, yearly: 289.99 },
+    USD: { monthly: null, yearly: null }   /* TODO: copy the US prices from Play Console → Subscriptions → base plans */
+  },
 
   /* Real Google Play reviews (5 stars), per language. TR is the original wording. */
   testimonials: {
@@ -79,6 +85,7 @@ window.DT_CONFIG = {
       pp1: 'Everything in Free', pp2: 'Unlock a block for today or loosen a limit without waiting for midnight', pp3: 'Strict focus mode: a session you start cannot be cancelled', pp4: 'Unbreakable block: cannot be lifted even on Pro, ends with the day',
       pro_note: 'Renews automatically through Google Play unless you cancel. Cancel any time.',
       test_eyebrow: 'What people say', test_h2: 'From the people who use it.',
+      price_on_play: 'See the price on Google Play',
       faq_eyebrow: 'FAQ', faq_h2: 'Common questions',
       q1: 'Is app blocking free?', a1: 'Yes. A daily limit per app and closing an app completely on chosen days are free for everyone. A block lasts until midnight.',
       q2: 'What does Pro add?', a2: 'Unlocking a block for today or loosening a limit, a strict focus mode that cannot be cancelled, and an unbreakable block that cannot be lifted even on Pro.',
@@ -121,6 +128,7 @@ window.DT_CONFIG = {
       pp1: 'Ücretsizdeki her şey', pp2: 'Engeli bugünlük aç veya limiti gevşet, gece yarısını bekleme', pp3: 'Sıkı odak modu: başlattığın oturum iptal edilemez', pp4: 'Kırılamaz engel: Pro\'dayken bile açılamaz, gün bitince kalkar',
       pro_note: 'İptal etmediğin sürece Google Play tarafından otomatik yenilenir. İstediğin zaman iptal edebilirsin.',
       test_eyebrow: 'Kullanıcılar ne diyor', test_h2: 'Kullananlardan.',
+      price_on_play: "Fiyatı Google Play'de gör",
       faq_eyebrow: 'Sık sorulanlar', faq_h2: 'Merak edilenler',
       q1: 'Uygulama engelleme ücretsiz mi?', a1: 'Evet. Uygulama başına günlük limit koymak ve seçtiğin günlerde bir uygulamayı tamamen kapatmak herkese ücretsiz. Engel gece yarısına kadar geçerlidir.',
       q2: 'Pro ne sağlıyor?', a2: 'Engeli bugünlük açmak veya limiti gevşetmek, iptal edilemeyen sıkı odak modu ve Pro\'dayken bile açılamayan kırılamaz engel.',

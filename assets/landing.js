@@ -17,7 +17,12 @@ if (!S.showImpact) { $$('[data-scene="impact"],[data-scene="currency"]').forEach
 const nf = () => new Intl.NumberFormat(lang === 'tr' ? 'tr-TR' : 'en-US');
 const fmtN = n => nf().format(Math.round(n));
 const fmtT = min => { const h = Math.floor(min / 60), m = Math.floor(min % 60); return lang === 'tr' ? (h ? `${h} sa ${m} dk` : `${m} dk`) : (h ? `${h}h ${m}m` : `${m}m`); };
-const fmtCur = v => new Intl.NumberFormat(lang === 'tr' ? 'tr-TR' : 'en-US', { style: 'currency', currency: C.pricing.currency }).format(v);
+const CUR = C.currencyFor[lang] || 'USD', PRICE = C.pricing[CUR] || {};
+const fmtCur = v => new Intl.NumberFormat(lang === 'tr' ? 'tr-TR' : 'en-US', { style: 'currency', currency: CUR }).format(v);
+/* Pro price row: amounts when Play Console prices are known for this currency, otherwise a link-like note. */
+const priceRowHtml = () => PRICE.monthly == null
+  ? `<span class="on-play">${T('price_on_play')}</span>`
+  : `<span id="priceM">${fmtCur(PRICE.monthly)}</span><small><span data-i="pro_month">${T('pro_month')}</span> · <span id="priceY">${fmtCur(PRICE.yearly)}</span> <span data-i="pro_year">${T('pro_year')}</span></small>`;
 const setText = (el, s) => { if (el && el.textContent !== s) el.textContent = s; };
 
 /* Derived stats */
@@ -35,7 +40,7 @@ D.delta = C.week.todayMinutes - D.weekAvg;
 /* ---------- static render ---------- */
 function applyLang() {
   $$('[data-i]').forEach(el => { const v = C.copy[lang][el.dataset.i]; if (v != null) el.innerHTML = v; });
-  setText($('#priceM'), fmtCur(C.pricing.monthly)); setText($('#priceY'), fmtCur(C.pricing.yearly)); setText($('#priceFree'), fmtCur(0).replace(/[\d.,]+/, '0'));
+  const pr = $('#priceRow'); if (pr) pr.innerHTML = priceRowHtml(); setText($('#priceFree'), fmtCur(0).replace(/[\d.,]+/, '0'));
   setText($('#dTotal'), fmtT(D.weekTotal)); setText($('#dAvg'), fmtT(D.weekAvg)); setText($('#dToday'), fmtT(C.week.todayMinutes));
   setText($('#dDelta'), `−${fmtT(-D.delta)} · −${Math.round(-D.delta / D.weekAvg * 100)}%`);
   setText($('#dAvgTag'), `${T('data_avg')} ${fmtT(D.weekAvg)}`);
@@ -43,6 +48,8 @@ function applyLang() {
   scenes.forEach(s => s.last = null); render();
 }
 $$('[data-dl]').forEach(a => a.href = C.downloadUrl);
+/* Remember an explicit language choice so the root page stops geo-redirecting. */
+$$('.lang-switch a').forEach(a => a.addEventListener('click', () => { try { localStorage.setItem('dt_lang', a.getAttribute('lang')); } catch (e) {} }));
 
 /* ---------- builders ---------- */
 const dots = $('#dots'); if (dots) { for (let i = 0; i < S.usersHelped; i++) { const d = document.createElement('i'); d.className = 'dot'; dots.appendChild(d); } }

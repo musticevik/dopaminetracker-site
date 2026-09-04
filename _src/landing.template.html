@@ -6,9 +6,10 @@
 <title>{{TITLE}}</title>
 <meta name="description" content="{{DESC}}">
 <link rel="canonical" href="{{CANON}}">
-<link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/">
-<link rel="alternate" hreflang="en" href="https://dopaminetracker.site/en/">
-<link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/en/">
+<link rel="alternate" hreflang="en" href="https://dopaminetracker.site/">
+<link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/tr/">
+<link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/">
+{{GEO_SCRIPT}}
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dopamine Tracker">
 <meta property="og:title" content="{{OG_TITLE}}">
@@ -169,8 +170,8 @@
 <div class="wrap">
 <div class="section-head reveal"><p class="eyebrow" data-i="pro_eyebrow">Free and Pro</p><h2 data-i="pro_h2">Setting a block is free for everyone. Flexibility is Pro.</h2></div>
 <div class="plans reveal">
-<div class="plan"><p class="eyebrow" data-i="plan_free">Free</p><p class="price" id="priceFree">₺0</p><ul><li data-i="pf1">Daily limit per app and full-day blocks</li><li data-i="pf2">Block screen and purpose reminder</li><li data-i="pf3">Screen time tracking, dopamine score, analytics</li><li data-i="pf4">Focus sessions, daily goal and streak</li><li class="no" data-i="pf5">Unlocking a block before midnight</li></ul></div>
-<div class="plan pro"><p class="eyebrow accent" data-i="plan_pro">Pro</p><p class="price"><span id="priceM">₺59,99</span><small><span data-i="pro_month">/ month</span> · <span id="priceY">₺289,99</span> <span data-i="pro_year">a year</span></small></p><ul><li data-i="pp1">Everything in Free</li><li data-i="pp2">Unlock a block for today or loosen a limit without waiting for midnight</li><li data-i="pp3">Strict focus mode: a session you start cannot be cancelled</li><li data-i="pp4">Unbreakable block: cannot be lifted even on Pro, ends with the day</li></ul><p class="note" data-i="pro_note">Renews automatically through Google Play unless you cancel. Cancel any time.</p></div>
+<div class="plan"><p class="eyebrow" data-i="plan_free">Free</p><p class="price" id="priceFree">{{PRICE_FREE}}</p><ul><li data-i="pf1">Daily limit per app and full-day blocks</li><li data-i="pf2">Block screen and purpose reminder</li><li data-i="pf3">Screen time tracking, dopamine score, analytics</li><li data-i="pf4">Focus sessions, daily goal and streak</li><li class="no" data-i="pf5">Unlocking a block before midnight</li></ul></div>
+<div class="plan pro"><p class="eyebrow accent" data-i="plan_pro">Pro</p><p class="price" id="priceRow">{{PRICE_PRO}}</p><ul><li data-i="pp1">Everything in Free</li><li data-i="pp2">Unlock a block for today or loosen a limit without waiting for midnight</li><li data-i="pp3">Strict focus mode: a session you start cannot be cancelled</li><li data-i="pp4">Unbreakable block: cannot be lifted even on Pro, ends with the day</li></ul><p class="note" data-i="pro_note">Renews automatically through Google Play unless you cancel. Cancel any time.</p></div>
 </div>
 </div>
 </section>

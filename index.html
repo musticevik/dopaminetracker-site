@@ -1,21 +1,22 @@
 <!doctype html>
-<html lang="tr">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Dopamine Tracker: Ekran Süresi Takibi ve Uygulama Engelleme (Android)</title>
-<meta name="description" content="Ekran süreni gerçek rakamlarla gör, Instagram ve TikTok gibi uygulamalara günlük limit koy, limit dolunca uygulama açılmasın. Telefon bağımlılığına karşı ücretsiz Android uygulaması.">
+<title>Dopamine Tracker: Screen Time Tracker and App Blocker for Android</title>
+<meta name="description" content="See your real screen time, set daily limits on Instagram, TikTok and other apps, and stop them from opening once the limit is reached. Free Android app against phone addiction.">
 <link rel="canonical" href="https://dopaminetracker.site/">
-<link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/">
-<link rel="alternate" hreflang="en" href="https://dopaminetracker.site/en/">
-<link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/en/">
+<link rel="alternate" hreflang="en" href="https://dopaminetracker.site/">
+<link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/tr/">
+<link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/">
+<script>(function(){try{var p=location.pathname;if(p!=='/'&&p!=='/index.html')return;var c=localStorage.getItem('dt_lang');if(c==='en')return;var ls=navigator.languages||[navigator.language||''];var tr=c==='tr'||ls.some(function(l){return /^tr(-|$)/i.test(l)})||Intl.DateTimeFormat().resolvedOptions().timeZone==='Europe/Istanbul';if(tr)location.replace('/tr/'+location.hash)}catch(e){}})();</script>
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Dopamine Tracker">
-<meta property="og:title" content="Dopamine Tracker: Zamanını geri al.">
-<meta property="og:description" content="Ekran sürenin nereye gittiğini gör ve kontrolü ele al. Android için ücretsiz.">
+<meta property="og:title" content="Dopamine Tracker: Take back your time.">
+<meta property="og:description" content="See where your screen time goes and take control of it. Free on Android.">
 <meta property="og:url" content="https://dopaminetracker.site/">
 <meta property="og:image" content="https://dopaminetracker.site/assets/img/og.png">
-<meta property="og:locale" content="tr_TR">
+<meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#0f0f14">
 <link rel="icon" href="./assets/img/icon.png">
@@ -26,19 +27,19 @@
 <link rel="stylesheet" href="./assets/site.css">
 <link rel="stylesheet" href="./assets/story.css">
 <link rel="stylesheet" href="./assets/landing.css">
-<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "Dopamine Tracker", "operatingSystem": "Android", "applicationCategory": "LifestyleApplication", "url": "https://dopaminetracker.site/", "installUrl": "https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker", "image": "https://dopaminetracker.site/assets/img/icon.png", "description": "Uygulama bazında ekran süresi, 0–100 arası günlük dopamin skoru ve gününü en çok alan uygulamalar. Telefonunda ölçülür, telefonundan çıkmaz.", "offers": [{"@type": "Offer", "price": "0", "priceCurrency": "TRY"}, {"@type": "Offer", "name": "Pro monthly", "price": "59.99", "priceCurrency": "TRY"}, {"@type": "Offer", "name": "Pro yearly", "price": "289.99", "priceCurrency": "TRY"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Uygulama engelleme ücretsiz mi?", "acceptedAnswer": {"@type": "Answer", "text": "Evet. Uygulama başına günlük limit koymak ve seçtiğin günlerde bir uygulamayı tamamen kapatmak herkese ücretsiz. Engel gece yarısına kadar geçerlidir."}}, {"@type": "Question", "name": "Pro ne sağlıyor?", "acceptedAnswer": {"@type": "Answer", "text": "Engeli bugünlük açmak veya limiti gevşetmek, iptal edilemeyen sıkı odak modu ve Pro'dayken bile açılamayan kırılamaz engel."}}, {"@type": "Question", "name": "Ekran süresi verilerim nereye gidiyor?", "acceptedAnswer": {"@type": "Answer", "text": "Uygulama bazındaki kullanım süreleri telefonundan çıkmaz. Hesabınla yalnızca onboarding yanıtların ve abonelik durumun eşitlenir."}}, {"@type": "Question", "name": "Hangi izinler gerekiyor?", "acceptedAnswer": {"@type": "Answer", "text": "Ekran süresini ölçmek için kullanım erişimi; engel ekranını gösterebilmek için diğer uygulamaların üzerinde gösterme izni. Odak seanslarında isteğe bağlı Rahatsız Etmeyin izni."}}, {"@type": "Question", "name": "iPhone sürümü var mı?", "acceptedAnswer": {"@type": "Answer", "text": "Şu anda yalnızca Android. Uygulama engelleme Android'in kullanım erişimi API'sine dayanıyor."}}]}]}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "SoftwareApplication", "name": "Dopamine Tracker", "operatingSystem": "Android", "applicationCategory": "LifestyleApplication", "url": "https://dopaminetracker.site/", "installUrl": "https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker", "image": "https://dopaminetracker.site/assets/img/icon.png", "description": "Per-app screen time, a daily dopamine score from 0 to 100, and the apps that take most of your day. Measured on your phone. It never leaves it.", "offers": [{"@type": "Offer", "price": "0", "priceCurrency": "USD"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is app blocking free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. A daily limit per app and closing an app completely on chosen days are free for everyone. A block lasts until midnight."}}, {"@type": "Question", "name": "What does Pro add?", "acceptedAnswer": {"@type": "Answer", "text": "Unlocking a block for today or loosening a limit, a strict focus mode that cannot be cancelled, and an unbreakable block that cannot be lifted even on Pro."}}, {"@type": "Question", "name": "Where does my screen time data go?", "acceptedAnswer": {"@type": "Answer", "text": "Per-app usage never leaves your phone. Only your onboarding answers and subscription status sync with your account."}}, {"@type": "Question", "name": "Which permissions are needed?", "acceptedAnswer": {"@type": "Answer", "text": "Usage access to measure screen time; display over other apps so the block screen can appear. Optional Do Not Disturb access to silence notifications during focus sessions."}}, {"@type": "Question", "name": "Is there an iPhone version?", "acceptedAnswer": {"@type": "Answer", "text": "Android only for now. App blocking relies on Android's usage access API."}}]}]}</script>
 </head>
 <body>
 <header class="top" id="top">
 <div class="wrap">
 <a class="brand" href="./"><img src="./assets/img/icon.png" alt="" width="32" height="32">Dopamine Tracker</a>
 <nav class="nav" aria-label="Site">
-<a href="#product" data-i="nav_product">Ürün</a>
-<a href="#how" data-i="nav_how">Nasıl çalışır</a>
+<a href="#product" data-i="nav_product">Product</a>
+<a href="#how" data-i="nav_how">How it works</a>
 
-<a href="#download" data-i="nav_download">İndir</a>
-<div class="lang-switch" role="group" aria-label="Language"><a href="./" hreflang="tr" lang="tr" class="is-active">TR</a><a href="./en/" hreflang="en" lang="en">EN</a></div>
-<a class="btn primary" data-dl href="https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker" rel="noopener" data-i="nav_cta">Uygulamayı al</a>
+<a href="#download" data-i="nav_download">Download</a>
+<div class="lang-switch" role="group" aria-label="Language"><a href="./" hreflang="en" lang="en" class="is-active">EN</a><a href="./tr/" hreflang="tr" lang="tr">TR</a></div>
+<a class="btn primary" data-dl href="https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker" rel="noopener" data-i="nav_cta">Get the App</a>
 </nav>
 </div>
 </header>
@@ -49,28 +50,28 @@
 <div class="glow g" style="opacity:1"></div>
 <div class="wrap">
 <div class="hero-copy" id="heroCopy">
-<p class="eyebrow accent" data-i="hero_eyebrow">Android · Ücretsiz</p>
-<h1 data-i="hero_h1">Zamanını geri al.</h1>
-<p class="lead" data-i="hero_lead">Dopamine Tracker ekran sürenin nereye gittiğini anlamanı ve kontrolü ele almanı sağlar.</p>
+<p class="eyebrow accent" data-i="hero_eyebrow">Android · Free</p>
+<h1 data-i="hero_h1">Take back your time.</h1>
+<p class="lead" data-i="hero_lead">Dopamine Tracker helps you understand where your screen time goes, and take control of it.</p>
 <div class="cta">
-<a class="btn primary" data-dl href="https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 2.4c-.3.3-.5.8-.5 1.4v16.4c0 .6.2 1.1.5 1.4l.1.1 9.2-9.2v-.2L3.7 2.3l-.1.1zm12.3 12.3L12.9 12v-.2l3-3 .1.1 3.6 2c1 .6 1 1.6 0 2.2l-3.6 2-.1.1zm-.1.1-3-3-9.2 9.2c.3.4.9.4 1.5 0l10.7-6.2zm0-6.4L5.1 2.2c-.6-.4-1.2-.3-1.5 0l9.2 9.2 3-3z"></path></svg><span data-i="cta_download">Dopamine Tracker'ı indir</span></a>
-<a class="btn ghost" href="#product" data-i="cta_how">Nasıl çalıştığını gör</a>
+<a class="btn primary" data-dl href="https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 2.4c-.3.3-.5.8-.5 1.4v16.4c0 .6.2 1.1.5 1.4l.1.1 9.2-9.2v-.2L3.7 2.3l-.1.1zm12.3 12.3L12.9 12v-.2l3-3 .1.1 3.6 2c1 .6 1 1.6 0 2.2l-3.6 2-.1.1zm-.1.1-3-3-9.2 9.2c.3.4.9.4 1.5 0l10.7-6.2zm0-6.4L5.1 2.2c-.6-.4-1.2-.3-1.5 0l9.2 9.2 3-3z"></path></svg><span data-i="cta_download">Download Dopamine Tracker</span></a>
+<a class="btn ghost" href="#product" data-i="cta_how">See how it works</a>
 </div>
-<p class="fine" data-i="hero_fine">Google Play'de ücretsiz. Kart bilgisi istenmez.</p>
+<p class="fine" data-i="hero_fine">Free on Google Play. No card required.</p>
 </div>
 <div class="problem" id="problem">
-<p class="eyebrow" data-i="prob_eyebrow">Sorun</p>
-<h2 data-i="prob_h2">Hayatının ne kadarı bir ekranda kayboluyor?</h2>
+<p class="eyebrow" data-i="prob_eyebrow">The problem</p>
+<h2 data-i="prob_h2">How much of your life disappears into a screen?</h2>
 <div class="rows">
-<div class="row"><span class="num" id="pN1">0m</span><span class="lbl" data-i="prob_l1">günlük ortalama ekran süresi</span></div>
-<div class="row"><span class="num" id="pN2">0m</span><span class="lbl" data-i="prob_l2">haftada</span></div>
-<div class="row"><span class="num" id="pN3">0</span><span class="lbl" data-i="prob_l3">yılda</span></div>
+<div class="row"><span class="num" id="pN1">0m</span><span class="lbl" data-i="prob_l1">average daily screen time</span></div>
+<div class="row"><span class="num" id="pN2">0m</span><span class="lbl" data-i="prob_l2">per week</span></div>
+<div class="row"><span class="num" id="pN3">0</span><span class="lbl" data-i="prob_l3">per year</span></div>
 </div>
-<p class="note" id="pNote" data-i="prob_note">Günlük küçük rakamlar. Yıllık büyük rakamlar.</p>
+<p class="note" id="pNote" data-i="prob_note">Small daily numbers. Large yearly ones.</p>
 </div>
-<div class="rig"><div class="phone" id="heroPhone"><img class="is-front" src="./assets/img/screens/home.jpg" width="973" height="2048" alt="Dopamine Tracker ana sayfası: günlük dopamin skoru ve bugünkü ekran süresi" fetchpriority="high"><img src="./assets/img/screens/analytics.jpg" width="973" height="2048" alt="Analiz: haftalık ekran süresi grafiği ve kategoriler" loading="lazy"></div></div>
+<div class="rig"><div class="phone" id="heroPhone"><img class="is-front" src="./assets/img/screens/home.jpg" width="973" height="2048" alt="Dopamine Tracker home: today's dopamine score and screen time" fetchpriority="high"><img src="./assets/img/screens/analytics.jpg" width="973" height="2048" alt="Analytics: weekly screen time chart and categories" loading="lazy"></div></div>
 </div>
-<div class="scroll-hint" id="hint"><span data-i="scroll" style="width:auto;height:auto;background:none;animation:none">Kaydır</span><span></span></div>
+<div class="scroll-hint" id="hint"><span data-i="scroll" style="width:auto;height:auto;background:none;animation:none">Scroll</span><span></span></div>
 </div>
 </section>
 
@@ -81,15 +82,15 @@
 <div class="glow g"></div>
 <div class="wrap">
 <div class="chapters">
-<div class="chapter is-active"><p class="num" data-i="f1_num">01 · Alışkanlıklarını anla</p><h2 data-i="f1_h2">Zamanının gerçekten nereye gittiğini gör.</h2><p class="lead" data-i="f1_p">Uygulama bazında ekran süresi, 0–100 arası günlük dopamin skoru ve gününü en çok alan uygulamalar. Telefonunda ölçülür, telefonundan çıkmaz.</p></div>
-<div class="chapter"><p class="num" data-i="f2_num">02 · Sınır koy</p><h2 data-i="f2_h2">Dikkatin. Kuralların.</h2><p class="lead" data-i="f2_p">Uygulama başına günlük limit, seçtiğin günlerde tam gün kapatma ve neden yüklediğini hatırlatan engel ekranı. Engelleme ücretsiz.</p></div>
-<div class="chapter"><p class="num" data-i="f3_num">03 · İvme kazan</p><h2 data-i="f3_h2">Küçük değişiklikler. Büyük fark.</h2><p class="lead" data-i="f3_p">Sosyal medya için günlük hedef, altında kaldığın her gün büyüyen seri ve bildirimleri susturan odak seansları.</p></div>
+<div class="chapter is-active"><p class="num" data-i="f1_num">01 · Understand your habits</p><h2 data-i="f1_h2">See where your time actually goes.</h2><p class="lead" data-i="f1_p">Per-app screen time, a daily dopamine score from 0 to 100, and the apps that take most of your day. Measured on your phone. It never leaves it.</p></div>
+<div class="chapter"><p class="num" data-i="f2_num">02 · Set boundaries</p><h2 data-i="f2_h2">Your attention. Your rules.</h2><p class="lead" data-i="f2_p">A daily limit per app, full-day blocks on the days you choose, and a block screen that reminds you why you installed the app. Blocking is free.</p></div>
+<div class="chapter"><p class="num" data-i="f3_num">03 · Build momentum</p><h2 data-i="f3_h2">Small changes. Massive difference.</h2><p class="lead" data-i="f3_p">A daily goal for social media, a streak that grows every day you stay under it, and focus sessions that silence notifications.</p></div>
 </div>
 <div class="feat-rig">
-<div class="phone" id="featPhone"><img class="is-front" src="./assets/img/screens/analytics.jpg" width="973" height="2048" alt="Analiz: haftalık ekran süresi grafiği ve kategoriler" loading="lazy"><img src="./assets/img/screens/block.jpg" width="973" height="2048" alt="Engelle: günlük limitli uygulamalar" loading="lazy"><img src="./assets/img/screens/home.jpg" width="973" height="2048" alt="Dopamine Tracker ana sayfası: günlük dopamin skoru ve bugünkü ekran süresi" loading="lazy"></div>
-<div class="viz" id="viz1"><p class="t" data-i="viz1_t">Bugün · en çok kullanılan</p><div class="bars" id="bars"></div></div>
-<div class="viz" id="viz2"><p class="t" data-i="viz2_t">Instagram · günlük limit</p><div class="ring"><svg viewBox="0 0 170 170"><circle class="bg" cx="85" cy="85" r="76"></circle><circle class="fg" id="ringFg" cx="85" cy="85" r="76"></circle></svg><div class="c"><b id="ringV">0m</b><span data-i="viz2_used">kullanıldı</span></div></div><p class="state" data-i="viz2_blocked">Gece yarısına kadar engelli</p></div>
-<div class="viz trend" id="viz3"><p class="t" data-i="viz3_t">Sosyal medya · son 14 gün</p><svg viewBox="0 0 260 110" id="trendSvg"><defs><linearGradient id="tg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2ECC71" stop-opacity=".35"></stop><stop offset="1" stop-color="#2ECC71" stop-opacity="0"></stop></linearGradient></defs><g class="grid"><line x1="0" y1="20" x2="260" y2="20"></line><line x1="0" y1="55" x2="260" y2="55"></line><line x1="0" y1="90" x2="260" y2="90"></line></g><path class="area" id="trendArea"></path><path id="trendLine"></path></svg><div class="streak"><span class="d" id="streakDots"></span><span class="s"><b id="streakN">0</b> <span data-i="viz3_streak">günlük seri</span></span></div></div>
+<div class="phone" id="featPhone"><img class="is-front" src="./assets/img/screens/analytics.jpg" width="973" height="2048" alt="Analytics: weekly screen time chart and categories" loading="lazy"><img src="./assets/img/screens/block.jpg" width="973" height="2048" alt="Block: apps with daily limits" loading="lazy"><img src="./assets/img/screens/home.jpg" width="973" height="2048" alt="Dopamine Tracker home: today's dopamine score and screen time" loading="lazy"></div>
+<div class="viz" id="viz1"><p class="t" data-i="viz1_t">Today · top apps</p><div class="bars" id="bars"></div></div>
+<div class="viz" id="viz2"><p class="t" data-i="viz2_t">Instagram · daily limit</p><div class="ring"><svg viewBox="0 0 170 170"><circle class="bg" cx="85" cy="85" r="76"></circle><circle class="fg" id="ringFg" cx="85" cy="85" r="76"></circle></svg><div class="c"><b id="ringV">0m</b><span data-i="viz2_used">used</span></div></div><p class="state" data-i="viz2_blocked">Blocked until midnight</p></div>
+<div class="viz trend" id="viz3"><p class="t" data-i="viz3_t">Social media · last 14 days</p><svg viewBox="0 0 260 110" id="trendSvg"><defs><linearGradient id="tg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2ECC71" stop-opacity=".35"></stop><stop offset="1" stop-color="#2ECC71" stop-opacity="0"></stop></linearGradient></defs><g class="grid"><line x1="0" y1="20" x2="260" y2="20"></line><line x1="0" y1="55" x2="260" y2="55"></line><line x1="0" y1="90" x2="260" y2="90"></line></g><path class="area" id="trendArea"></path><path id="trendLine"></path></svg><div class="streak"><span class="d" id="streakDots"></span><span class="s"><b id="streakN">0</b> <span data-i="viz3_streak">day streak</span></span></div></div>
 </div>
 </div>
 </div>
@@ -98,20 +99,20 @@
 <section class="data" id="data">
 <div class="wrap">
 <div class="reveal">
-<p class="eyebrow" data-i="data_eyebrow">Veri</p>
-<h2 class="section-head" style="margin:0" data-i="data_h2">Uygulamanın içinde bir hafta.</h2>
-<p style="color:var(--muted);font-weight:600;margin-top:14px;max-width:460px" data-i="data_p">Gerçek bir haftadan gerçek rakamlar: haftalık toplam, günlük ortalama ve bugünün ortalamanın ne kadar altında kaldığı.</p>
+<p class="eyebrow" data-i="data_eyebrow">Data</p>
+<h2 class="section-head" style="margin:0" data-i="data_h2">One week inside the app.</h2>
+<p style="color:var(--muted);font-weight:600;margin-top:14px;max-width:460px" data-i="data_p">Real numbers from a real week: the weekly total, the daily average, and how far today landed below it.</p>
 <div class="figs">
-<div class="fig"><b id="dTotal">0</b><span data-i="data_l1">haftalık toplam</span></div>
-<div class="fig"><b id="dAvg">0</b><span data-i="data_l2">günlük ortalama</span></div>
-<div class="fig"><b id="dToday">0</b><span data-i="data_l3">bugün</span></div>
-<div class="fig"><b class="g" id="dDelta">0</b><span data-i="data_l4">ortalamaya göre</span></div>
+<div class="fig"><b id="dTotal">0</b><span data-i="data_l1">weekly total</span></div>
+<div class="fig"><b id="dAvg">0</b><span data-i="data_l2">daily average</span></div>
+<div class="fig"><b id="dToday">0</b><span data-i="data_l3">today</span></div>
+<div class="fig"><b class="g" id="dDelta">0</b><span data-i="data_l4">vs. average</span></div>
 </div>
 </div>
 <div class="chart reveal">
-<p class="t"><span data-i="data_week">Bu hafta</span><span id="dAvgTag"></span></p>
+<p class="t"><span data-i="data_week">This week</span><span id="dAvgTag"></span></p>
 <svg viewBox="0 0 700 300" id="weekSvg"></svg>
-<div class="score"><p class="t"><span data-i="data_score">Skor eğrisi · 7 günde 0 → 56</span></p><svg viewBox="0 0 700 90" id="scoreSvg"></svg></div>
+<div class="score"><p class="t"><span data-i="data_score">Score curve · 0 → 56 over 7 days</span></p><svg viewBox="0 0 700 90" id="scoreSvg"></svg></div>
 </div>
 </div>
 </section>
@@ -121,54 +122,54 @@
 <section class="scene show-scene" data-scene="showcase">
 <div class="stage">
 <div class="glow g" style="opacity:.7"></div>
-<div class="show-head"><p class="eyebrow" data-i="show_eyebrow">Uygulama</p><h2 data-i="show_h2">Her şey, bir başparmak uzağında.</h2></div>
+<div class="show-head"><p class="eyebrow" data-i="show_eyebrow">The app</p><h2 data-i="show_h2">Everything, one thumb away.</h2></div>
 <div class="orbit" id="orbit">
-<div class="phone main" id="mainPhone"><img class="is-front" src="./assets/img/screens/home.jpg" width="973" height="2048" alt="Dopamine Tracker ana sayfası: günlük dopamin skoru ve bugünkü ekran süresi" loading="lazy"><img src="./assets/img/screens/analytics.jpg" width="973" height="2048" alt="Analiz: haftalık ekran süresi grafiği ve kategoriler" loading="lazy"><img src="./assets/img/screens/block.jpg" width="973" height="2048" alt="Engelle: günlük limitli uygulamalar" loading="lazy"><img src="./assets/img/screens/focus.jpg" width="973" height="2048" alt="Odak seansı zamanlayıcısı" loading="lazy"><img src="./assets/img/screens/account.jpg" width="973" height="2048" alt="Hesap: hedefler ve ilerleme" loading="lazy"></div>
-<div class="phone sat" data-k="0"><img class="is-front" src="./assets/img/screens/analytics.jpg" width="973" height="2048" alt="" loading="lazy"></div><p class="cap" data-k="0" data-i="sc_analytics">Haftalık istatistikler</p>
-<div class="phone sat" data-k="1"><img class="is-front" src="./assets/img/screens/block.jpg" width="973" height="2048" alt="" loading="lazy"></div><p class="cap" data-k="1" data-i="sc_block">Uygulama engelleme</p>
-<div class="phone sat" data-k="2"><img class="is-front" src="./assets/img/screens/focus.jpg" width="973" height="2048" alt="" loading="lazy"></div><p class="cap" data-k="2" data-i="sc_focus">Odak seansları</p>
-<div class="phone sat" data-k="3"><img class="is-front" src="./assets/img/screens/account.jpg" width="973" height="2048" alt="" loading="lazy"></div><p class="cap" data-k="3" data-i="sc_account">Hedefler ve ilerleme</p>
+<div class="phone main" id="mainPhone"><img class="is-front" src="./assets/img/screens/home.jpg" width="973" height="2048" alt="Dopamine Tracker home: today's dopamine score and screen time" loading="lazy"><img src="./assets/img/screens/analytics.jpg" width="973" height="2048" alt="Analytics: weekly screen time chart and categories" loading="lazy"><img src="./assets/img/screens/block.jpg" width="973" height="2048" alt="Block: apps with daily limits" loading="lazy"><img src="./assets/img/screens/focus.jpg" width="973" height="2048" alt="Focus session timer" loading="lazy"><img src="./assets/img/screens/account.jpg" width="973" height="2048" alt="Account: goals and progress" loading="lazy"></div>
+<div class="phone sat" data-k="0"><img class="is-front" src="./assets/img/screens/analytics.jpg" width="973" height="2048" alt="" loading="lazy"></div><p class="cap" data-k="0" data-i="sc_analytics">Weekly statistics</p>
+<div class="phone sat" data-k="1"><img class="is-front" src="./assets/img/screens/block.jpg" width="973" height="2048" alt="" loading="lazy"></div><p class="cap" data-k="1" data-i="sc_block">App blocking</p>
+<div class="phone sat" data-k="2"><img class="is-front" src="./assets/img/screens/focus.jpg" width="973" height="2048" alt="" loading="lazy"></div><p class="cap" data-k="2" data-i="sc_focus">Focus sessions</p>
+<div class="phone sat" data-k="3"><img class="is-front" src="./assets/img/screens/account.jpg" width="973" height="2048" alt="" loading="lazy"></div><p class="cap" data-k="3" data-i="sc_account">Goals & progress</p>
 </div>
 </div>
 </section>
 
 <section id="how">
 <div class="wrap">
-<div class="section-head reveal"><p class="eyebrow" data-i="how_eyebrow">Nasıl çalışır</p><h2 data-i="how_h2">Üç adım.</h2></div>
+<div class="section-head reveal"><p class="eyebrow" data-i="how_eyebrow">How it works</p><h2 data-i="how_h2">Three steps.</h2></div>
 <div class="steps reveal">
-<div class="step"><h3 data-i="step1_h">Gerçek rakamı gör</h3><p data-i="step1_p">Kullanım erişimi ver, ilk açılışta uygulama bazında gerçek ekran süreni gör.</p></div>
-<div class="step"><h3 data-i="step2_h">Limit koy</h3><p data-i="step2_p">Seni geri çeken uygulamayı seç, günlük limit ya da kapalı günler belirle. Engel kurmak ücretsiz.</p></div>
-<div class="step"><h3 data-i="step3_h">Gece yarısını bekle</h3><p data-i="step3_p">Limit dolunca uygulama açılmaz. Erken çıkmak isteyen Pro'ya geçer.</p></div>
+<div class="step"><h3 data-i="step1_h">See the real number</h3><p data-i="step1_p">Grant usage access and see your true per-app screen time on the first launch.</p></div>
+<div class="step"><h3 data-i="step2_h">Set a limit</h3><p data-i="step2_p">Pick the app that pulls you back, choose a daily limit or closed days. Setting a block is free.</p></div>
+<div class="step"><h3 data-i="step3_h">Wait for midnight</h3><p data-i="step3_p">Once the limit is reached the app does not open. Whoever wants out early goes Pro.</p></div>
 </div>
 </div>
 </section>
 
 <section id="pro">
 <div class="wrap">
-<div class="section-head reveal"><p class="eyebrow" data-i="pro_eyebrow">Ücretsiz ve Pro</p><h2 data-i="pro_h2">Engel kurmak herkese ücretsiz. Esneklik Pro'da.</h2></div>
+<div class="section-head reveal"><p class="eyebrow" data-i="pro_eyebrow">Free and Pro</p><h2 data-i="pro_h2">Setting a block is free for everyone. Flexibility is Pro.</h2></div>
 <div class="plans reveal">
-<div class="plan"><p class="eyebrow" data-i="plan_free">Ücretsiz</p><p class="price" id="priceFree">₺0</p><ul><li data-i="pf1">Uygulama başına günlük limit ve tam gün kapatma</li><li data-i="pf2">Engel ekranı ve amaç hatırlatması</li><li data-i="pf3">Ekran süresi takibi, dopamin skoru, analiz</li><li data-i="pf4">Odak seansları, günlük hedef ve seri</li><li class="no" data-i="pf5">Engeli gece yarısından önce açma</li></ul></div>
-<div class="plan pro"><p class="eyebrow accent" data-i="plan_pro">Pro</p><p class="price"><span id="priceM">₺59,99</span><small><span data-i="pro_month">/ ay</span> · <span id="priceY">₺289,99</span> <span data-i="pro_year">yıllık</span></small></p><ul><li data-i="pp1">Ücretsizdeki her şey</li><li data-i="pp2">Engeli bugünlük aç veya limiti gevşet, gece yarısını bekleme</li><li data-i="pp3">Sıkı odak modu: başlattığın oturum iptal edilemez</li><li data-i="pp4">Kırılamaz engel: Pro'dayken bile açılamaz, gün bitince kalkar</li></ul><p class="note" data-i="pro_note">İptal etmediğin sürece Google Play tarafından otomatik yenilenir. İstediğin zaman iptal edebilirsin.</p></div>
+<div class="plan"><p class="eyebrow" data-i="plan_free">Free</p><p class="price" id="priceFree">$0</p><ul><li data-i="pf1">Daily limit per app and full-day blocks</li><li data-i="pf2">Block screen and purpose reminder</li><li data-i="pf3">Screen time tracking, dopamine score, analytics</li><li data-i="pf4">Focus sessions, daily goal and streak</li><li class="no" data-i="pf5">Unlocking a block before midnight</li></ul></div>
+<div class="plan pro"><p class="eyebrow accent" data-i="plan_pro">Pro</p><p class="price" id="priceRow"><span class="on-play">See the price on Google Play</span></p><ul><li data-i="pp1">Everything in Free</li><li data-i="pp2">Unlock a block for today or loosen a limit without waiting for midnight</li><li data-i="pp3">Strict focus mode: a session you start cannot be cancelled</li><li data-i="pp4">Unbreakable block: cannot be lifted even on Pro, ends with the day</li></ul><p class="note" data-i="pro_note">Renews automatically through Google Play unless you cancel. Cancel any time.</p></div>
 </div>
 </div>
 </section>
 
 <section id="voices">
 <div class="wrap">
-<div class="section-head reveal"><p class="eyebrow" data-i="test_eyebrow">Kullanıcılar ne diyor</p><h2 data-i="test_h2">Kullananlardan.</h2></div>
-<div class="quotes reveal" id="quotes"><figure class="quote"><span class="bar"></span><span class="stars" aria-label="5 / 5">★★★★★</span><p>“Ekran süremi azaltmama çok yardımcı oldu. Uygulamayı kullandığımda yaptığım işe tamamen odaklanabiliyorum; odak modu olması çok iyi bir özellik ve uygulama dizaynı kullanışı çok rahatlaştırıyor.”</p><figcaption class="who"><span class="av">O</span>Orçun Ç. · Google Play</figcaption></figure><figure class="quote"><span class="bar"></span><span class="stars" aria-label="5 / 5">★★★★★</span><p>“Çok tatlı bir uygulama. Başta ekran süreleri üzerine veri koyması, bilgiler aktarması keyifliydi.”</p><figcaption class="who"><span class="av">İ</span>İrem B. G. · Google Play</figcaption></figure></div>
+<div class="section-head reveal"><p class="eyebrow" data-i="test_eyebrow">What people say</p><h2 data-i="test_h2">From the people who use it.</h2></div>
+<div class="quotes reveal" id="quotes"><figure class="quote"><span class="bar"></span><span class="stars" aria-label="5 / 5">★★★★★</span><p>“It really helped me cut down my screen time. When I use the app I can fully focus on what I am doing. Having a focus mode is a great feature, and the design makes it very comfortable to use.”</p><figcaption class="who"><span class="av">O</span>Orçun Ç. · Google Play</figcaption></figure><figure class="quote"><span class="bar"></span><span class="stars" aria-label="5 / 5">★★★★★</span><p>“Such a lovely app. Seeing data about my screen time right from the start, and the way it presents the information, was a pleasure.”</p><figcaption class="who"><span class="av">İ</span>İrem B. G. · Google Play</figcaption></figure></div>
 </div>
 </section>
 
 <section id="faq">
 <div class="wrap">
-<div class="section-head reveal"><p class="eyebrow" data-i="faq_eyebrow">Sık sorulanlar</p><h2 data-i="faq_h2">Merak edilenler</h2></div>
+<div class="section-head reveal"><p class="eyebrow" data-i="faq_eyebrow">FAQ</p><h2 data-i="faq_h2">Common questions</h2></div>
 <div class="faq reveal">
-<details><summary data-i="q1">Uygulama engelleme ücretsiz mi?</summary><p data-i="a1">Evet. Uygulama başına günlük limit koymak ve seçtiğin günlerde bir uygulamayı tamamen kapatmak herkese ücretsiz. Engel gece yarısına kadar geçerlidir.</p></details>
-<details><summary data-i="q2">Pro ne sağlıyor?</summary><p data-i="a2">Engeli bugünlük açmak veya limiti gevşetmek, iptal edilemeyen sıkı odak modu ve Pro'dayken bile açılamayan kırılamaz engel.</p></details>
-<details><summary data-i="q3">Ekran süresi verilerim nereye gidiyor?</summary><p data-i="a3">Uygulama bazındaki kullanım süreleri telefonundan çıkmaz. Hesabınla yalnızca onboarding yanıtların ve abonelik durumun eşitlenir.</p></details>
-<details><summary data-i="q4">Hangi izinler gerekiyor?</summary><p data-i="a4">Ekran süresini ölçmek için kullanım erişimi; engel ekranını gösterebilmek için diğer uygulamaların üzerinde gösterme izni. Odak seanslarında isteğe bağlı Rahatsız Etmeyin izni.</p></details>
-<details><summary data-i="q5">iPhone sürümü var mı?</summary><p data-i="a5">Şu anda yalnızca Android. Uygulama engelleme Android'in kullanım erişimi API'sine dayanıyor.</p></details>
+<details><summary data-i="q1">Is app blocking free?</summary><p data-i="a1">Yes. A daily limit per app and closing an app completely on chosen days are free for everyone. A block lasts until midnight.</p></details>
+<details><summary data-i="q2">What does Pro add?</summary><p data-i="a2">Unlocking a block for today or loosening a limit, a strict focus mode that cannot be cancelled, and an unbreakable block that cannot be lifted even on Pro.</p></details>
+<details><summary data-i="q3">Where does my screen time data go?</summary><p data-i="a3">Per-app usage never leaves your phone. Only your onboarding answers and subscription status sync with your account.</p></details>
+<details><summary data-i="q4">Which permissions are needed?</summary><p data-i="a4">Usage access to measure screen time; display over other apps so the block screen can appear. Optional Do Not Disturb access to silence notifications during focus sessions.</p></details>
+<details><summary data-i="q5">Is there an iPhone version?</summary><p data-i="a5">Android only for now. App blocking relies on Android's usage access API.</p></details>
 </div>
 </div>
 </section>
@@ -177,11 +178,11 @@
 <div class="stage">
 <div class="glow g" id="finalGlow"></div>
 <div class="final-copy" id="finalCopy">
-<h2 data-i="final_h2">Daha fazla zamana ihtiyacın yok.</h2>
-<p data-i="final_p">Zaten sahip olduğun zaman üzerinde daha fazla kontrole ihtiyacın var.</p>
-<a class="btn primary" data-dl href="https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 2.4c-.3.3-.5.8-.5 1.4v16.4c0 .6.2 1.1.5 1.4l.1.1 9.2-9.2v-.2L3.7 2.3l-.1.1zm12.3 12.3L12.9 12v-.2l3-3 .1.1 3.6 2c1 .6 1 1.6 0 2.2l-3.6 2-.1.1zm-.1.1-3-3-9.2 9.2c.3.4.9.4 1.5 0l10.7-6.2zm0-6.4L5.1 2.2c-.6-.4-1.2-.3-1.5 0l9.2 9.2 3-3z"></path></svg><span data-i="cta_download">Dopamine Tracker'ı indir</span></a>
+<h2 data-i="final_h2">You don't need more time.</h2>
+<p data-i="final_p">You need more control over the time you already have.</p>
+<a class="btn primary" data-dl href="https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 2.4c-.3.3-.5.8-.5 1.4v16.4c0 .6.2 1.1.5 1.4l.1.1 9.2-9.2v-.2L3.7 2.3l-.1.1zm12.3 12.3L12.9 12v-.2l3-3 .1.1 3.6 2c1 .6 1 1.6 0 2.2l-3.6 2-.1.1zm-.1.1-3-3-9.2 9.2c.3.4.9.4 1.5 0l10.7-6.2zm0-6.4L5.1 2.2c-.6-.4-1.2-.3-1.5 0l9.2 9.2 3-3z"></path></svg><span data-i="cta_download">Download Dopamine Tracker</span></a>
 </div>
-<div class="rig"><div class="phone" id="finalPhone"><img class="is-front" src="./assets/img/screens/home.jpg" width="973" height="2048" alt="Dopamine Tracker ana sayfası: günlük dopamin skoru ve bugünkü ekran süresi" loading="lazy"></div></div>
+<div class="rig"><div class="phone" id="finalPhone"><img class="is-front" src="./assets/img/screens/home.jpg" width="973" height="2048" alt="Dopamine Tracker home: today's dopamine score and screen time" loading="lazy"></div></div>
 </div>
 </section>
 </main>
@@ -189,7 +190,7 @@
 <footer>
 <div class="wrap">
 <div>© 2026 Dopamine Tracker</div>
-<div><a id="privacyLink" href="./gizlilik/" data-i="foot_privacy">Gizlilik politikası</a><a href="./en/">English</a><a data-dl href="https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker" rel="noopener" data-i="foot_play">Google Play</a></div>
+<div><a id="privacyLink" href="./privacy/" data-i="foot_privacy">Privacy policy</a><a href="./tr/">Türkçe</a><a data-dl href="https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker" rel="noopener" data-i="foot_play">Google Play</a></div>
 </div>
 </footer>
 <script src="./assets/config.js"></script>
