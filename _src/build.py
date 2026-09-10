@@ -31,7 +31,7 @@ PAGES = {
         desc="See your real screen time, set daily limits on Instagram, TikTok and other apps, and stop them from opening once the limit is reached. Free Android app against phone addiction.",
         og_title="Dopamine Tracker: Take back your time.",
         og_desc="See where your screen time goes and take control of it. Free on Android.",
-        og_locale="en_US", privacy="./privacy/", other_href="./tr/", other_label="Türkçe",
+        og_locale="en_US", privacy="./privacy/", support="./support/", other_href="./tr/", other_label="Türkçe",
         alts=dict(HOME="Dopamine Tracker home: today's dopamine score and screen time",
                   ANALYTICS="Analytics: weekly screen time chart and categories",
                   BLOCK="Block: apps with daily limits",
@@ -44,7 +44,7 @@ PAGES = {
         desc="Ekran süreni gerçek rakamlarla gör, Instagram ve TikTok gibi uygulamalara günlük limit koy, limit dolunca uygulama açılmasın. Telefon bağımlılığına karşı ücretsiz Android uygulaması.",
         og_title="Dopamine Tracker: Zamanını geri al.",
         og_desc="Ekran sürenin nereye gittiğini gör ve kontrolü ele al. Android için ücretsiz.",
-        og_locale="tr_TR", privacy="./gizlilik/", other_href="../", other_label="English",
+        og_locale="tr_TR", privacy="./gizlilik/", support="./destek/", other_href="../", other_label="English",
         alts=dict(HOME="Dopamine Tracker ana sayfası: günlük dopamin skoru ve bugünkü ekran süresi",
                   ANALYTICS="Analiz: haftalık ekran süresi grafiği ve kategoriler",
                   BLOCK="Engelle: günlük limitli uygulamalar",
@@ -128,7 +128,7 @@ def build():
             "{{PRICE_FREE}}": free, "{{PRICE_PRO}}": pro,
             "{{JSONLD}}": jsonld(lang, copy, cfg, p["canon"], cur, price),
             "{{QUOTES}}": quotes_html(cfg["testimonials"].get(lang) or cfg["testimonials"]["en"]),
-            "{{PRIVACY_HREF}}": p["privacy"], "{{OTHER_HREF}}": p["other_href"], "{{OTHER_LABEL}}": p["other_label"],
+            "{{PRIVACY_HREF}}": p["privacy"], "{{SUPPORT_HREF}}": p["support"], "{{OTHER_HREF}}": p["other_href"], "{{OTHER_LABEL}}": p["other_label"],
         }
         for k, v in p["alts"].items():
             rep["{{ALT_%s}}" % k] = v

@@ -16,4 +16,16 @@
   </url>
   <url><loc>https://dopaminetracker.site/privacy/</loc><lastmod>2026-09-04</lastmod></url>
   <url><loc>https://dopaminetracker.site/tr/gizlilik/</loc><lastmod>2026-09-04</lastmod></url>
+  <url>
+    <loc>https://dopaminetracker.site/support/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dopaminetracker.site/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/tr/destek/"/>
+    <lastmod>2026-09-10</lastmod>
+  </url>
+  <url>
+    <loc>https://dopaminetracker.site/tr/destek/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dopaminetracker.site/support/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/tr/destek/"/>
+    <lastmod>2026-09-10</lastmod>
+  </url>
 </urlset>

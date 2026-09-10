@@ -93,7 +93,7 @@ window.DT_CONFIG = {
       q4: 'Which permissions are needed?', a4: 'Usage access to measure screen time; display over other apps so the block screen can appear. Optional Do Not Disturb access to silence notifications during focus sessions.',
       q5: 'Is there an iPhone version?', a5: 'Android only for now. App blocking relies on Android\'s usage access API.',
       final_h2: 'You don\'t need more time.', final_p: 'You need more control over the time you already have.',
-      foot_privacy: 'Privacy policy', foot_play: 'Google Play'
+      foot_privacy: 'Privacy policy', foot_support: 'Support', foot_play: 'Google Play'
     },
     tr: {
       nav_product: 'Ürün', nav_how: 'Nasıl çalışır', nav_impact: 'Etki', nav_download: 'İndir', nav_cta: 'Uygulamayı al',
@@ -136,7 +136,7 @@ window.DT_CONFIG = {
       q4: 'Hangi izinler gerekiyor?', a4: 'Ekran süresini ölçmek için kullanım erişimi; engel ekranını gösterebilmek için diğer uygulamaların üzerinde gösterme izni. Odak seanslarında isteğe bağlı Rahatsız Etmeyin izni.',
       q5: 'iPhone sürümü var mı?', a5: 'Şu anda yalnızca Android. Uygulama engelleme Android\'in kullanım erişimi API\'sine dayanıyor.',
       final_h2: 'Daha fazla zamana ihtiyacın yok.', final_p: 'Zaten sahip olduğun zaman üzerinde daha fazla kontrole ihtiyacın var.',
-      foot_privacy: 'Gizlilik politikası', foot_play: 'Google Play'
+      foot_privacy: 'Gizlilik politikası', foot_support: 'Destek', foot_play: 'Google Play'
     }
   }
 };
