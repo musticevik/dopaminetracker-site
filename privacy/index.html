@@ -22,7 +22,7 @@
 <main class="legal">
   <p class="eyebrow">Privacy policy</p>
   <h1>Your data: where, how long, why</h1>
-  <p class="updated">Last updated: 4 September 2026</p>
+  <p class="updated">Last updated: 26 September 2026</p>
 
   <p>Dopamine Tracker ("the app") is a screen time tracker and app blocker for Android. This policy explains which data the app processes, which of it stays on your phone, and how you can delete it.</p>
 
@@ -46,32 +46,41 @@
   </ul>
   <p>Usage time, blocking rules and focus sessions are not synced with your account.</p>
 
-  <h2>3. Third-party services</h2>
+  <h2>3. Notifications and app analytics</h2>
+  <p>These apply whether or not you have an account:</p>
+  <ul>
+    <li><strong>Notification token</strong>: if you allow notifications, the app registers a notification token and your app language with our servers, so we can send you messages — about updates, and about offers if you keep "Premium suggestions" on. If you are signed in, the token is linked to your account. Turning notifications off in the app deletes it from our servers.</li>
+    <li><strong>App analytics</strong>: which screens of the app you open and a few in-app events (for example finishing setup, viewing the Pro screen, the result of a purchase), plus your device model, operating system and app version. This is linked to a random identifier and, if you are signed in, to your account ID — never your email address. It <strong>never</strong> includes which apps you use or for how long.</li>
+  </ul>
+
+  <h2>4. Third-party services</h2>
   <ul>
     <li><strong>Supabase</strong>: authentication and account data storage.</li>
     <li><strong>RevenueCat and Google Play Billing</strong>: purchasing and validating subscriptions. Payment details stay with Google Play; the app never sees card data.</li>
     <li><strong>Google AdMob</strong>: the app includes the ads SDK, which may access the device advertising ID. You can reset the ID or opt out of personalisation in Android settings.</li>
+    <li><strong>PostHog</strong>: the app analytics described in section 3.</li>
+    <li><strong>Expo and Google Firebase Cloud Messaging</strong>: delivering notifications to your device. They receive the notification token and the message.</li>
   </ul>
-  <p>These services are governed by their own privacy policies. We do not sell your data to third parties for advertising.</p>
+  <p>Supabase stores account data in the European Union; PostHog, RevenueCat and Expo process data in the United States. These services are governed by their own privacy policies. We do not sell your data to third parties for advertising.</p>
 
-  <h2>4. Permissions</h2>
+  <h2>5. Permissions</h2>
   <ul>
     <li><strong>Usage access</strong>: required to measure screen time.</li>
     <li><strong>Display over other apps</strong>: to show the block screen when you open an app that has reached its limit.</li>
-    <li><strong>Notifications</strong>: weekly progress, evening reminders and in-the-moment nudges; each can be switched off separately in the app.</li>
+    <li><strong>Notifications</strong>: weekly progress, evening reminders and in-the-moment nudges; each can be switched off separately in the app. Messages we send from our server use the same permission; offers among them stop when you turn "Premium suggestions" off.</li>
     <li><strong>Do Not Disturb access</strong>: requested only if you choose to silence notifications during focus sessions.</li>
   </ul>
 
-  <h2>5. Retention and deletion</h2>
-  <p>Account data is kept for as long as your account exists. You can permanently delete your account and everything tied to it from <strong>Profile → Delete my account</strong>; deletion is immediate. On-device data is removed when you uninstall the app.</p>
+  <h2>6. Retention and deletion</h2>
+  <p>Account data is kept for as long as your account exists. You can permanently delete your account and the data we store with it from <strong>Profile → Delete my account</strong>; deletion is immediate, and your notification token is unlinked from the account. App analytics linked to your account ID are kept by PostHog and deleted on request — email us. On-device data is removed when you uninstall the app.</p>
 
-  <h2>6. Children</h2>
+  <h2>7. Children</h2>
   <p>The app is not designed for children under 13 and does not knowingly collect data from them.</p>
 
-  <h2>7. Changes</h2>
+  <h2>8. Changes</h2>
   <p>When this policy changes, this page is updated and the date above changes.</p>
 
-  <h2>8. Contact</h2>
+  <h2>9. Contact</h2>
   <p>Questions: <a href="mailto:agilersoft@gmail.com">agilersoft@gmail.com</a></p>
 </main>
 
