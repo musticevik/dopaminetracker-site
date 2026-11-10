@@ -1,6 +1,6 @@
 # dopaminetracker.site
 
-Static marketing site for Dopamine Tracker, published with GitHub Pages
+Static marketing site for Neurofast, published with GitHub Pages
 (custom domain `dopaminetracker.site`, HTTPS enforced). No server-side build:
 every committed file is served as-is.
 

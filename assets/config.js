@@ -1,9 +1,9 @@
-/* Dopamine Tracker landing — single place to edit numbers, links and copy.
+/* Neurofast landing — single place to edit numbers, links and copy.
    The two HTML pages are generated from _src/landing.template.html by
    `python _src/build.py`, which bakes copy[lang] into static text for SEO;
    this file drives the live numbers and animations at runtime. */
 window.DT_CONFIG = {
-  appName: 'Dopamine Tracker',
+  appName: 'Neurofast',
   downloadUrl: 'https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker',
   privacyUrl: { en: 'https://dopaminetracker.site/privacy/', tr: 'https://dopaminetracker.site/tr/gizlilik/' },
   defaultLang: 'en',
@@ -55,8 +55,8 @@ window.DT_CONFIG = {
     en: {
       nav_product: 'Product', nav_how: 'How it works', nav_impact: 'Impact', nav_download: 'Download', nav_cta: 'Get the App',
       hero_eyebrow: 'Android · Free', hero_h1: 'Take back your time.',
-      hero_lead: 'Dopamine Tracker helps you understand where your screen time goes, and take control of it.',
-      cta_download: 'Download Dopamine Tracker', cta_how: 'See how it works', hero_fine: 'Free on Google Play. No card required.', scroll: 'Scroll',
+      hero_lead: 'Neurofast helps you understand where your screen time goes, and take control of it.',
+      cta_download: 'Download Neurofast', cta_how: 'See how it works', hero_fine: 'Free on Google Play. No card required.', scroll: 'Scroll',
       prob_eyebrow: 'The problem', prob_h2: 'How much of your life disappears into a screen?',
       prob_l1: 'average daily screen time', prob_l2: 'per week', prob_l3: 'per year', prob_note: 'Small daily numbers. Large yearly ones.',
       imp_eyebrow: 'Impact so far', imp_l0: 'people helped', imp_l1: 'hours reclaimed', imp_l2: 'hours reclaimed per person', imp_sub: 'Every dot is one person.',
@@ -98,8 +98,8 @@ window.DT_CONFIG = {
     tr: {
       nav_product: 'Ürün', nav_how: 'Nasıl çalışır', nav_impact: 'Etki', nav_download: 'İndir', nav_cta: 'Uygulamayı al',
       hero_eyebrow: 'Android · Ücretsiz', hero_h1: 'Zamanını geri al.',
-      hero_lead: 'Dopamine Tracker ekran sürenin nereye gittiğini anlamanı ve kontrolü ele almanı sağlar.',
-      cta_download: 'Dopamine Tracker\'ı indir', cta_how: 'Nasıl çalıştığını gör', hero_fine: 'Google Play\'de ücretsiz. Kart bilgisi istenmez.', scroll: 'Kaydır',
+      hero_lead: 'Neurofast ekran sürenin nereye gittiğini anlamanı ve kontrolü ele almanı sağlar.',
+      cta_download: 'Neurofast\'ı indir', cta_how: 'Nasıl çalıştığını gör', hero_fine: 'Google Play\'de ücretsiz. Kart bilgisi istenmez.', scroll: 'Kaydır',
       prob_eyebrow: 'Sorun', prob_h2: 'Hayatının ne kadarı bir ekranda kayboluyor?',
       prob_l1: 'günlük ortalama ekran süresi', prob_l2: 'haftada', prob_l3: 'yılda', prob_note: 'Günlük küçük rakamlar. Yıllık büyük rakamlar.',
       imp_eyebrow: 'Bugüne kadar', imp_l0: 'kişiye yardım edildi', imp_l1: 'saat geri kazanıldı', imp_l2: 'kişi başı geri kazanılan saat', imp_sub: 'Her nokta bir kişi.',
