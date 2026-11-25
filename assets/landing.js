@@ -47,7 +47,12 @@ function applyLang() {
   buildWeekChart(); buildQuotes();
   scenes.forEach(s => s.last = null); render();
 }
-$$('[data-dl]').forEach(a => a.href = C.downloadUrl);
+/* Store links: data-dl = Google Play, data-dl="ios" = App Store, data-dl="auto" = the visitor's own store
+   (stays on the #download section on desktop, where both buttons are). */
+const UA = navigator.userAgent || '', IS_IOS = /iPhone|iPad|iPod/i.test(UA), IS_ANDROID = /Android/i.test(UA);
+$$('[data-dl]').forEach(a => { const k = a.dataset.dl;
+  if (k === 'ios') a.href = C.appStoreUrl; else if (k !== 'auto') a.href = C.downloadUrl;
+  else if (IS_IOS) a.href = C.appStoreUrl; else if (IS_ANDROID) a.href = C.downloadUrl; });
 /* Remember an explicit language choice so the root page stops geo-redirecting. */
 $$('.lang-switch a').forEach(a => a.addEventListener('click', () => { try { localStorage.setItem('dt_lang', a.getAttribute('lang')); } catch (e) {} }));
 
@@ -61,13 +66,7 @@ const months = $('#months'); if (months) { for (let i = 1; i <= 6; i++) { const 
 const bars = $('#bars'); const maxApp = Math.max(...C.topApps.map(a => a.minutes));
 C.topApps.forEach(a => { bars.insertAdjacentHTML('beforeend', `<div class="bar-row"><span>${a.name}</span><span class="v">0m</span><span class="tr"><span class="fl"></span></span></div>`); });
 const barRows = $$('.bar-row', bars);
-const sd = $('#streakDots'); for (let i = 0; i < 7; i++) sd.appendChild(document.createElement('i')); const streakEls = $$('i', sd);
-/* trend path */
-(() => { const m = C.trend.minutes, mx = Math.max(...m), mn = Math.min(...m); const pts = m.map((v, i) => [i / (m.length - 1) * 260, 100 - (v - mn) / (mx - mn) * 80]);
-  const d = pts.map((p, i) => (i ? 'L' : 'M') + p[0].toFixed(1) + ' ' + p[1].toFixed(1)).join(' ');
-  $('#trendLine').setAttribute('d', d); $('#trendArea').setAttribute('d', d + ' L260 110 L0 110 Z'); })();
-const trendLine = $('#trendLine'); let trendLen = 400; try { trendLen = trendLine.getTotalLength(); } catch (e) {}
-trendLine.style.strokeDasharray = trendLen; trendLine.style.strokeDashoffset = trendLen;
+const keepRows = $$('#viz3 li');
 const ringFg = $('#ringFg'), ringC = 2 * Math.PI * 76; ringFg.style.strokeDasharray = ringC; ringFg.style.strokeDashoffset = ringC;
 
 function buildWeekChart() {
@@ -77,9 +76,6 @@ function buildWeekChart() {
   m.forEach((v, i) => { const isT = i === m.length - 1; s += `<rect class="b${isT ? ' hi' : ''}" x="${x(i)}" y="${y(v)}" width="${bw}" height="${H - 34 - y(v)}" rx="10" style="transition-delay:${i * 90}ms"></rect><text x="${x(i) + bw / 2}" y="${H - 10}" text-anchor="middle">${labels[i]}</text>`; });
   s += `<line class="avg" x1="${pad}" x2="${W - pad}" y1="${y(D.weekAvg)}" y2="${y(D.weekAvg)}"></line><text x="${W - pad}" y="${y(D.weekAvg) - 8}" text-anchor="end">${T('data_avg').toLocaleUpperCase(lang === 'tr' ? 'tr-TR' : 'en-US')} ${fmtT(D.weekAvg)}</text>`;
   $('#weekSvg').innerHTML = s;
-  const sc = [0, 4, 9, 14, 20, 35, 56], px = i => 10 + i * (680 / 6), py = v => 80 - v / 60 * 70;
-  let d = `M${px(0)} ${py(sc[0])}`; for (let i = 1; i < sc.length; i++) { const cx = (px(i - 1) + px(i)) / 2; d += ` C${cx} ${py(sc[i - 1])} ${cx} ${py(sc[i])} ${px(i)} ${py(sc[i])}`; }
-  $('#scoreSvg').innerHTML = `<path class="curve" d="${d}"></path><circle class="dotp" cx="${px(6)}" cy="${py(56)}" r="6"></circle><text x="${px(6)}" y="${py(56) - 14}" text-anchor="end">${C.week.scoreTo}</text><text x="${px(0)}" y="${py(0) - 10}">${C.week.scoreFrom}</text>`;
 }
 function buildQuotes() {
   const list = C.testimonials[lang] || C.testimonials.en || [];
@@ -134,8 +130,8 @@ const H = {
     barRows.forEach((r, k) => { const a = C.topApps[k], w = a.minutes / maxApp * 100 * vizs[0]._prog; $('.fl', r).style.width = w + '%'; setText($('.v', r), fmtT(a.minutes * vizs[0]._prog)); });
     /* viz 2: ring */
     const rp = vizs[1]._prog, used = C.limit.limitMinutes * eo(seg(rp, 0, .85)); ringFg.style.strokeDashoffset = ringC * (1 - used / C.limit.limitMinutes); setText($('#ringV'), fmtT(used)); vizs[1].classList.toggle('blocked', rp > .97);
-    /* viz 3: trend */
-    const tp = vizs[2]._prog; trendLine.style.strokeDashoffset = trendLen * (1 - tp); $('#trendArea').style.opacity = tp; const sN = Math.round(C.trend.streak * seg(tp, .45, 1)); streakEls.forEach((e, k) => e.classList.toggle('on', k < sN)); setText($('#streakN'), sN);
+    /* viz 3: what stays and what goes, one row at a time */
+    const kp = vizs[2]._prog; keepRows.forEach((r, k) => r.classList.toggle('on', kp > (k + 1) / (keepRows.length + 1)));
   },
   currency(p) {
     const ph = [[0, .36], [.36, .68], [.68, 1]], k = p < .36 ? 0 : p < .68 ? 1 : 2, t = seg(p, ...ph[k]);

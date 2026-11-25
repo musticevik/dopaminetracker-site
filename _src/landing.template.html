@@ -15,18 +15,27 @@
 <meta property="og:title" content="{{OG_TITLE}}">
 <meta property="og:description" content="{{OG_DESC}}">
 <meta property="og:url" content="{{CANON}}">
-<meta property="og:image" content="https://dopaminetracker.site/assets/img/og.png">
+<meta property="og:image" content="{{OG_IMAGE}}">
 <meta property="og:locale" content="{{OG_LOCALE}}">
+<meta property="og:image:alt" content="Neurofast">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{OG_TITLE}}">
+<meta name="twitter:description" content="{{OG_DESC}}">
+<meta name="twitter:image" content="{{OG_IMAGE}}">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="application-name" content="Neurofast">
+<meta name="apple-mobile-web-app-title" content="Neurofast">
+<meta name="apple-itunes-app" content="app-id=6810599494">
 <meta name="theme-color" content="#0f0f14">
 <link rel="icon" href="{{P}}assets/img/icon.png">
 <link rel="apple-touch-icon" href="{{P}}assets/img/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Nunito:wght@600;700;800;900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{P}}assets/site.css">
-<link rel="stylesheet" href="{{P}}assets/story.css">
-<link rel="stylesheet" href="{{P}}assets/landing.css">
+<link rel="stylesheet" href="{{P}}assets/site.css?v={{V}}">
+<link rel="stylesheet" href="{{P}}assets/story.css?v={{V}}">
+<link rel="stylesheet" href="{{P}}assets/landing.css?v={{V}}">
+<link rel="stylesheet" href="{{P}}assets/blog.css?v={{V}}">
 <script type="application/ld+json">{{JSONLD}}</script>
 </head>
 <body>
@@ -38,8 +47,9 @@
 <a href="#how" data-i="nav_how">How it works</a>
 <!--IMPACT_NAV--><a href="#impact" data-i="nav_impact">Impact</a><!--/IMPACT_NAV-->
 <a href="#download" data-i="nav_download">Download</a>
+<a href="{{BLOG_HREF}}" data-i="nav_blog">Blog</a>
 <div class="lang-switch" role="group" aria-label="Language">{{LANG_SWITCH}}</div>
-<a class="btn primary" data-dl href="https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker" rel="noopener" data-i="nav_cta">Get the App</a>
+<a class="btn primary" data-dl="auto" href="#download" data-i="nav_cta">Get the App</a>
 </nav>
 </div>
 </header>
@@ -50,14 +60,13 @@
 <div class="glow g" style="opacity:1"></div>
 <div class="wrap">
 <div class="hero-copy" id="heroCopy">
-<p class="eyebrow accent" data-i="hero_eyebrow">Android · Free</p>
-<h1 data-i="hero_h1">Take back your time.</h1>
+<h1><span class="eyebrow accent kicker" data-i="hero_eyebrow">Neurofast · Free social media blocker for iPhone and Android</span> <span data-i="hero_h1">Take back your time.</span></h1>
 <p class="lead" data-i="hero_lead">Neurofast helps you understand where your screen time goes, and take control of it.</p>
 <div class="cta">
-<a class="btn primary" data-dl href="https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 2.4c-.3.3-.5.8-.5 1.4v16.4c0 .6.2 1.1.5 1.4l.1.1 9.2-9.2v-.2L3.7 2.3l-.1.1zm12.3 12.3L12.9 12v-.2l3-3 .1.1 3.6 2c1 .6 1 1.6 0 2.2l-3.6 2-.1.1zm-.1.1-3-3-9.2 9.2c.3.4.9.4 1.5 0l10.7-6.2zm0-6.4L5.1 2.2c-.6-.4-1.2-.3-1.5 0l9.2 9.2 3-3z"></path></svg><span data-i="cta_download">Download Neurofast</span></a>
-<a class="btn ghost" href="#product" data-i="cta_how">See how it works</a>
+<a class="btn primary" data-dl="ios" href="https://apps.apple.com/app/id6810599494" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"></path></svg><span data-i="cta_ios">App Store</span></a>
+<a class="btn primary" data-dl href="https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 2.4c-.3.3-.5.8-.5 1.4v16.4c0 .6.2 1.1.5 1.4l.1.1 9.2-9.2v-.2L3.7 2.3l-.1.1zm12.3 12.3L12.9 12v-.2l3-3 .1.1 3.6 2c1 .6 1 1.6 0 2.2l-3.6 2-.1.1zm-.1.1-3-3-9.2 9.2c.3.4.9.4 1.5 0l10.7-6.2zm0-6.4L5.1 2.2c-.6-.4-1.2-.3-1.5 0l9.2 9.2 3-3z"></path></svg><span data-i="cta_android">Google Play</span></a>
 </div>
-<p class="fine" data-i="hero_fine">Free on Google Play. No card required.</p>
+<p class="proof"><span><b data-i="proof_users_n">300+</b> <span data-i="proof_users_l">active users</span></span><span><b data-i="proof_hours_n">1,000+</b> <span data-i="proof_hours_l">hours saved</span></span></p>
 </div>
 <div class="problem" id="problem">
 <p class="eyebrow" data-i="prob_eyebrow">The problem</p>
@@ -69,7 +78,7 @@
 </div>
 <p class="note" id="pNote" data-i="prob_note">Small daily numbers. Large yearly ones.</p>
 </div>
-<div class="rig"><div class="phone" id="heroPhone"><img class="is-front" src="{{P}}assets/img/screens/home.jpg" width="973" height="2048" alt="{{ALT_HOME}}" fetchpriority="high"><img src="{{P}}assets/img/screens/analytics.jpg" width="973" height="2048" alt="{{ALT_ANALYTICS}}" loading="lazy"></div></div>
+<div class="rig"><div class="phone" id="heroPhone"><img class="is-front" src="{{P}}assets/img/screens/{{SCR}}home.jpg?v={{V}}" width="748" height="1440" alt="{{ALT_HOME}}" fetchpriority="high"><img src="{{P}}assets/img/screens/{{SCR}}analytics.jpg?v={{V}}" width="748" height="1440" alt="{{ALT_ANALYTICS}}" loading="lazy"></div></div>
 </div>
 <div class="scroll-hint" id="hint"><span data-i="scroll" style="width:auto;height:auto;background:none;animation:none">Scroll</span><span></span></div>
 </div>
@@ -97,10 +106,10 @@
 <div class="chapter"><p class="num" data-i="f3_num">03 · Build momentum</p><h2 data-i="f3_h2">Small changes. Massive difference.</h2><p class="lead" data-i="f3_p">A daily goal for social media, a streak that grows every day you stay under it, and focus sessions that silence notifications.</p></div>
 </div>
 <div class="feat-rig">
-<div class="phone" id="featPhone"><img class="is-front" src="{{P}}assets/img/screens/analytics.jpg" width="973" height="2048" alt="{{ALT_ANALYTICS}}" loading="lazy"><img src="{{P}}assets/img/screens/block.jpg" width="973" height="2048" alt="{{ALT_BLOCK}}" loading="lazy"><img src="{{P}}assets/img/screens/home.jpg" width="973" height="2048" alt="{{ALT_HOME}}" loading="lazy"></div>
+<div class="phone" id="featPhone"><img class="is-front" src="{{P}}assets/img/screens/{{SCR}}analytics.jpg?v={{V}}" width="748" height="1440" alt="{{ALT_ANALYTICS}}" loading="lazy"><img src="{{P}}assets/img/screens/{{SCR}}block.jpg?v={{V}}" width="748" height="1440" alt="{{ALT_BLOCK}}" loading="lazy"><img src="{{P}}assets/img/screens/{{SCR}}smart.jpg?v={{V}}" width="748" height="1440" alt="{{ALT_SMART}}" loading="lazy"></div>
 <div class="viz" id="viz1"><p class="t" data-i="viz1_t">Today · top apps</p><div class="bars" id="bars"></div></div>
 <div class="viz" id="viz2"><p class="t" data-i="viz2_t">Instagram · daily limit</p><div class="ring"><svg viewBox="0 0 170 170"><circle class="bg" cx="85" cy="85" r="76"></circle><circle class="fg" id="ringFg" cx="85" cy="85" r="76"></circle></svg><div class="c"><b id="ringV">0m</b><span data-i="viz2_used">used</span></div></div><p class="state" data-i="viz2_blocked">Blocked until midnight</p></div>
-<div class="viz trend" id="viz3"><p class="t" data-i="viz3_t">Social media · last 14 days</p><svg viewBox="0 0 260 110" id="trendSvg"><defs><linearGradient id="tg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2ECC71" stop-opacity=".35"></stop><stop offset="1" stop-color="#2ECC71" stop-opacity="0"></stop></linearGradient></defs><g class="grid"><line x1="0" y1="20" x2="260" y2="20"></line><line x1="0" y1="55" x2="260" y2="55"></line><line x1="0" y1="90" x2="260" y2="90"></line></g><path class="area" id="trendArea"></path><path id="trendLine"></path></svg><div class="streak"><span class="d" id="streakDots"></span><span class="s"><b id="streakN">0</b> <span data-i="viz3_streak">day streak</span></span></div></div>
+<div class="viz keep" id="viz3"><p class="t" data-i="viz3_t">Instagram · YouTube · TikTok</p><p class="k" data-i="viz3_stay">Stays</p><ul><li class="ok" data-i="viz3_s1"></li><li class="ok" data-i="viz3_s2"></li><li class="ok" data-i="viz3_s3"></li></ul><p class="k" data-i="viz3_gone">Gone</p><ul><li class="no" data-i="viz3_g1"></li><li class="no" data-i="viz3_g2"></li><li class="no" data-i="viz3_g3"></li></ul></div>
 </div>
 </div>
 </div>
@@ -122,7 +131,6 @@
 <div class="chart reveal">
 <p class="t"><span data-i="data_week">This week</span><span id="dAvgTag"></span></p>
 <svg viewBox="0 0 700 300" id="weekSvg"></svg>
-<div class="score"><p class="t"><span data-i="data_score">Score curve · 0 → 56 over 7 days</span></p><svg viewBox="0 0 700 90" id="scoreSvg"></svg></div>
 </div>
 </div>
 </section>
@@ -146,11 +154,11 @@
 <div class="glow g" style="opacity:.7"></div>
 <div class="show-head"><p class="eyebrow" data-i="show_eyebrow">The app</p><h2 data-i="show_h2">Everything, one thumb away.</h2></div>
 <div class="orbit" id="orbit">
-<div class="phone main" id="mainPhone"><img class="is-front" src="{{P}}assets/img/screens/home.jpg" width="973" height="2048" alt="{{ALT_HOME}}" loading="lazy"><img src="{{P}}assets/img/screens/analytics.jpg" width="973" height="2048" alt="{{ALT_ANALYTICS}}" loading="lazy"><img src="{{P}}assets/img/screens/block.jpg" width="973" height="2048" alt="{{ALT_BLOCK}}" loading="lazy"><img src="{{P}}assets/img/screens/focus.jpg" width="973" height="2048" alt="{{ALT_FOCUS}}" loading="lazy"><img src="{{P}}assets/img/screens/account.jpg" width="973" height="2048" alt="{{ALT_ACCOUNT}}" loading="lazy"></div>
-<div class="phone sat" data-k="0"><img class="is-front" src="{{P}}assets/img/screens/analytics.jpg" width="973" height="2048" alt="" loading="lazy"></div><p class="cap" data-k="0" data-i="sc_analytics">Weekly statistics</p>
-<div class="phone sat" data-k="1"><img class="is-front" src="{{P}}assets/img/screens/block.jpg" width="973" height="2048" alt="" loading="lazy"></div><p class="cap" data-k="1" data-i="sc_block">App blocking</p>
-<div class="phone sat" data-k="2"><img class="is-front" src="{{P}}assets/img/screens/focus.jpg" width="973" height="2048" alt="" loading="lazy"></div><p class="cap" data-k="2" data-i="sc_focus">Focus sessions</p>
-<div class="phone sat" data-k="3"><img class="is-front" src="{{P}}assets/img/screens/account.jpg" width="973" height="2048" alt="" loading="lazy"></div><p class="cap" data-k="3" data-i="sc_account">Goals &amp; progress</p>
+<div class="phone main" id="mainPhone"><img class="is-front" src="{{P}}assets/img/screens/{{SCR}}home.jpg?v={{V}}" width="748" height="1440" alt="{{ALT_HOME}}" loading="lazy"><img src="{{P}}assets/img/screens/{{SCR}}analytics.jpg?v={{V}}" width="748" height="1440" alt="{{ALT_ANALYTICS}}" loading="lazy"><img src="{{P}}assets/img/screens/{{SCR}}block.jpg?v={{V}}" width="748" height="1440" alt="{{ALT_BLOCK}}" loading="lazy"><img src="{{P}}assets/img/screens/{{SCR}}focus.jpg?v={{V}}" width="748" height="1440" alt="{{ALT_FOCUS}}" loading="lazy"><img src="{{P}}assets/img/screens/{{SCR}}smart.jpg?v={{V}}" width="748" height="1440" alt="{{ALT_SMART}}" loading="lazy"></div>
+<div class="phone sat" data-k="0"><img class="is-front" src="{{P}}assets/img/screens/{{SCR}}analytics.jpg?v={{V}}" width="748" height="1440" alt="" loading="lazy"></div><p class="cap" data-k="0" data-i="sc_analytics">Weekly statistics</p>
+<div class="phone sat" data-k="1"><img class="is-front" src="{{P}}assets/img/screens/{{SCR}}block.jpg?v={{V}}" width="748" height="1440" alt="" loading="lazy"></div><p class="cap" data-k="1" data-i="sc_block">App blocking</p>
+<div class="phone sat" data-k="2"><img class="is-front" src="{{P}}assets/img/screens/{{SCR}}focus.jpg?v={{V}}" width="748" height="1440" alt="" loading="lazy"></div><p class="cap" data-k="2" data-i="sc_focus">Focus sessions</p>
+<div class="phone sat" data-k="3"><img class="is-front" src="{{P}}assets/img/screens/{{SCR}}smart.jpg?v={{V}}" width="748" height="1440" alt="" loading="lazy"></div><p class="cap" data-k="3" data-i="sc_smart">Reels and Shorts blocked</p>
 </div>
 </div>
 </section>
@@ -171,7 +179,7 @@
 <div class="section-head reveal"><p class="eyebrow" data-i="pro_eyebrow">Free and Pro</p><h2 data-i="pro_h2">Setting a block is free for everyone. Flexibility is Pro.</h2></div>
 <div class="plans reveal">
 <div class="plan"><p class="eyebrow" data-i="plan_free">Free</p><p class="price" id="priceFree">{{PRICE_FREE}}</p><ul><li data-i="pf1">Daily limit per app and full-day blocks</li><li data-i="pf2">Block screen and purpose reminder</li><li data-i="pf3">Screen time tracking, dopamine score, analytics</li><li data-i="pf4">Focus sessions, daily goal and streak</li><li class="no" data-i="pf5">Unlocking a block before midnight</li></ul></div>
-<div class="plan pro"><p class="eyebrow accent" data-i="plan_pro">Pro</p><p class="price" id="priceRow">{{PRICE_PRO}}</p><ul><li data-i="pp1">Everything in Free</li><li data-i="pp2">Unlock a block for today or loosen a limit without waiting for midnight</li><li data-i="pp3">Strict focus mode: a session you start cannot be cancelled</li><li data-i="pp4">Unbreakable block: cannot be lifted even on Pro, ends with the day</li></ul><p class="note" data-i="pro_note">Renews automatically through Google Play unless you cancel. Cancel any time.</p></div>
+<div class="plan pro"><p class="eyebrow accent" data-i="plan_pro">Pro</p><p class="price" id="priceRow">{{PRICE_PRO}}</p><ul><li data-i="pp1">Everything in Free</li><li data-i="pp5"></li><li data-i="pp2">Unlock a block for today or loosen a limit without waiting for midnight</li><li data-i="pp3">Strict focus mode: a session you start cannot be cancelled</li><li data-i="pp4">Unbreakable block: cannot be lifted even on Pro, ends with the day</li><li data-i="pp6"></li></ul><p class="note" data-i="pro_note">Renews automatically through Google Play unless you cancel. Cancel any time.</p></div>
 </div>
 </div>
 </section>
@@ -179,7 +187,16 @@
 <section id="voices">
 <div class="wrap">
 <div class="section-head reveal"><p class="eyebrow" data-i="test_eyebrow">What people say</p><h2 data-i="test_h2">From the people who use it.</h2></div>
+<div class="figs proof-figs reveal"><div class="fig"><b class="g" data-i="proof_users_n">300+</b><span data-i="proof_users_l">active users</span></div><div class="fig"><b class="g" data-i="proof_hours_n">1,000+</b><span data-i="proof_hours_l">hours saved</span></div></div>
 <div class="quotes reveal" id="quotes">{{QUOTES}}</div>
+</div>
+</section>
+
+<section id="blog">
+<div class="wrap">
+<div class="section-head reveal"><p class="eyebrow" data-i="blog_eyebrow">Blog</p><h2 data-i="blog_h2">Read more about Neurofast</h2></div>
+<div class="posts reveal">{{BLOG_CARDS}}</div>
+<p class="posts-all reveal"><a href="{{BLOG_HREF}}" data-i="blog_all">All articles</a></p>
 </div>
 </section>
 
@@ -187,11 +204,15 @@
 <div class="wrap">
 <div class="section-head reveal"><p class="eyebrow" data-i="faq_eyebrow">FAQ</p><h2 data-i="faq_h2">Common questions</h2></div>
 <div class="faq reveal">
+<details><summary data-i="q7">What is Neurofast?</summary><p data-i="a7"></p></details>
 <details><summary data-i="q1">Is app blocking free?</summary><p data-i="a1">Yes. A daily limit per app and closing an app completely on chosen days are free for everyone. A block lasts until midnight.</p></details>
 <details><summary data-i="q2">What does Pro add?</summary><p data-i="a2">Unlocking a block for today or loosening a limit, a strict focus mode that cannot be cancelled, and an unbreakable block that cannot be lifted even on Pro.</p></details>
 <details><summary data-i="q3">Where does my screen time data go?</summary><p data-i="a3">Per-app usage never leaves your phone. Only your onboarding answers and subscription status sync with your account.</p></details>
 <details><summary data-i="q4">Which permissions are needed?</summary><p data-i="a4">Usage access to measure screen time; display over other apps so the block screen can appear. Optional Do Not Disturb access to silence notifications during focus sessions.</p></details>
-<details><summary data-i="q5">Is there an iPhone version?</summary><p data-i="a5">Android only for now. App blocking relies on Android's usage access API.</p></details>
+<details><summary data-i="q5">Is there an iPhone version?</summary><p data-i="a5"></p></details>
+<details><summary data-i="q6">Can it block Reels and Shorts without blocking the whole app?</summary><p data-i="a6"></p></details>
+<details><summary data-i="q9"></summary><p data-i="a9"></p></details>
+<details><summary data-i="q8">How many people use Neurofast?</summary><p data-i="a8"></p></details>
 </div>
 </div>
 </section>
@@ -202,9 +223,12 @@
 <div class="final-copy" id="finalCopy">
 <h2 data-i="final_h2">You don't need more time.</h2>
 <p data-i="final_p">You need more control over the time you already have.</p>
-<a class="btn primary" data-dl href="https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 2.4c-.3.3-.5.8-.5 1.4v16.4c0 .6.2 1.1.5 1.4l.1.1 9.2-9.2v-.2L3.7 2.3l-.1.1zm12.3 12.3L12.9 12v-.2l3-3 .1.1 3.6 2c1 .6 1 1.6 0 2.2l-3.6 2-.1.1zm-.1.1-3-3-9.2 9.2c.3.4.9.4 1.5 0l10.7-6.2zm0-6.4L5.1 2.2c-.6-.4-1.2-.3-1.5 0l9.2 9.2 3-3z"></path></svg><span data-i="cta_download">Download Neurofast</span></a>
+<div class="cta">
+<a class="btn primary" data-dl="ios" href="https://apps.apple.com/app/id6810599494" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"></path></svg><span data-i="cta_ios">App Store</span></a>
+<a class="btn primary" data-dl href="https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3.6 2.4c-.3.3-.5.8-.5 1.4v16.4c0 .6.2 1.1.5 1.4l.1.1 9.2-9.2v-.2L3.7 2.3l-.1.1zm12.3 12.3L12.9 12v-.2l3-3 .1.1 3.6 2c1 .6 1 1.6 0 2.2l-3.6 2-.1.1zm-.1.1-3-3-9.2 9.2c.3.4.9.4 1.5 0l10.7-6.2zm0-6.4L5.1 2.2c-.6-.4-1.2-.3-1.5 0l9.2 9.2 3-3z"></path></svg><span data-i="cta_android">Google Play</span></a>
 </div>
-<div class="rig"><div class="phone" id="finalPhone"><img class="is-front" src="{{P}}assets/img/screens/home.jpg" width="973" height="2048" alt="{{ALT_HOME}}" loading="lazy"></div></div>
+</div>
+<div class="rig"><div class="phone" id="finalPhone"><img class="is-front" src="{{P}}assets/img/screens/{{SCR}}home.jpg?v={{V}}" width="748" height="1440" alt="{{ALT_HOME}}" loading="lazy"></div></div>
 </div>
 </section>
 </main>
@@ -212,10 +236,10 @@
 <footer>
 <div class="wrap">
 <div>© 2026 Neurofast</div>
-<div><a id="privacyLink" href="{{PRIVACY_HREF}}" data-i="foot_privacy">Privacy policy</a><a href="{{SUPPORT_HREF}}" data-i="foot_support">Support</a><a href="{{OTHER_HREF}}">{{OTHER_LABEL}}</a><a data-dl href="https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker" rel="noopener" data-i="foot_play">Google Play</a></div>
+<div><a id="privacyLink" href="{{PRIVACY_HREF}}" data-i="foot_privacy">Privacy policy</a><a href="{{SUPPORT_HREF}}" data-i="foot_support">Support</a><a href="{{BLOG_HREF}}" data-i="foot_blog">Blog</a><a href="{{OTHER_HREF}}">{{OTHER_LABEL}}</a><a data-dl="ios" href="https://apps.apple.com/app/id6810599494" rel="noopener" data-i="foot_ios">App Store</a><a data-dl href="https://play.google.com/store/apps/details?id=com.agilersoft.dopaminetracker" rel="noopener" data-i="foot_play">Google Play</a></div>
 </div>
 </footer>
-<script src="{{P}}assets/config.js"></script>
-<script src="{{P}}assets/landing.js"></script>
+<script src="{{P}}assets/config.js?v={{V}}"></script>
+<script src="{{P}}assets/landing.js?v={{V}}"></script>
 </body>
 </html>

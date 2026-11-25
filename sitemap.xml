@@ -5,27 +5,129 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://dopaminetracker.site/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/"/>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://dopaminetracker.site/tr/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dopaminetracker.site/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/tr/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/"/>
-    <lastmod>2026-09-04</lastmod>
+    <lastmod>2026-11-25</lastmod>
   </url>
-  <url><loc>https://dopaminetracker.site/privacy/</loc><lastmod>2026-09-04</lastmod></url>
-  <url><loc>https://dopaminetracker.site/tr/gizlilik/</loc><lastmod>2026-09-04</lastmod></url>
+  <url>
+    <loc>https://dopaminetracker.site/privacy/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dopaminetracker.site/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/tr/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/privacy/"/>
+    <lastmod>2026-11-13</lastmod>
+  </url>
+  <url>
+    <loc>https://dopaminetracker.site/tr/gizlilik/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dopaminetracker.site/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/tr/gizlilik/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/privacy/"/>
+    <lastmod>2026-11-13</lastmod>
+  </url>
   <url>
     <loc>https://dopaminetracker.site/support/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dopaminetracker.site/support/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/tr/destek/"/>
-    <lastmod>2026-09-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/support/"/>
+    <lastmod>2026-11-25</lastmod>
   </url>
   <url>
     <loc>https://dopaminetracker.site/tr/destek/</loc>
     <xhtml:link rel="alternate" hreflang="en" href="https://dopaminetracker.site/support/"/>
     <xhtml:link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/tr/destek/"/>
-    <lastmod>2026-09-10</lastmod>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/support/"/>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://dopaminetracker.site/terms/</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://dopaminetracker.site/blog/what-is-neurofast/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dopaminetracker.site/blog/what-is-neurofast/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/tr/blog/neurofast-nedir/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/blog/what-is-neurofast/"/>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://dopaminetracker.site/blog/screenzen-alternative/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dopaminetracker.site/blog/screenzen-alternative/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/tr/blog/screenzen-alternatifi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/blog/screenzen-alternative/"/>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://dopaminetracker.site/blog/opal-alternative/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dopaminetracker.site/blog/opal-alternative/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/tr/blog/opal-alternatifi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/blog/opal-alternative/"/>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://dopaminetracker.site/blog/block-instagram-reels-youtube-shorts/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dopaminetracker.site/blog/block-instagram-reels-youtube-shorts/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/tr/blog/instagram-reels-youtube-shorts-engelleme/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/blog/block-instagram-reels-youtube-shorts/"/>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://dopaminetracker.site/blog/best-social-media-blocker-apps/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dopaminetracker.site/blog/best-social-media-blocker-apps/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/tr/blog/en-iyi-sosyal-medya-engelleme-uygulamalari/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/blog/best-social-media-blocker-apps/"/>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://dopaminetracker.site/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dopaminetracker.site/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/blog/"/>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://dopaminetracker.site/tr/blog/screenzen-alternatifi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dopaminetracker.site/blog/screenzen-alternative/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/tr/blog/screenzen-alternatifi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/blog/screenzen-alternative/"/>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://dopaminetracker.site/tr/blog/opal-alternatifi/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dopaminetracker.site/blog/opal-alternative/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/tr/blog/opal-alternatifi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/blog/opal-alternative/"/>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://dopaminetracker.site/tr/blog/neurofast-nedir/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dopaminetracker.site/blog/what-is-neurofast/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/tr/blog/neurofast-nedir/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/blog/what-is-neurofast/"/>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://dopaminetracker.site/tr/blog/instagram-reels-youtube-shorts-engelleme/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dopaminetracker.site/blog/block-instagram-reels-youtube-shorts/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/tr/blog/instagram-reels-youtube-shorts-engelleme/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/blog/block-instagram-reels-youtube-shorts/"/>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://dopaminetracker.site/tr/blog/en-iyi-sosyal-medya-engelleme-uygulamalari/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dopaminetracker.site/blog/best-social-media-blocker-apps/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/tr/blog/en-iyi-sosyal-medya-engelleme-uygulamalari/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/blog/best-social-media-blocker-apps/"/>
+    <lastmod>2026-11-25</lastmod>
+  </url>
+  <url>
+    <loc>https://dopaminetracker.site/tr/blog/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://dopaminetracker.site/blog/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://dopaminetracker.site/tr/blog/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://dopaminetracker.site/blog/"/>
+    <lastmod>2026-11-25</lastmod>
   </url>
 </urlset>

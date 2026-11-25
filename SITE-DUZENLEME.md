@@ -46,7 +46,10 @@ değişikliği görmezsen sayfayı sert yenile (Ctrl+F5) ya da gizli sekmede aç
 | **Destek** sayfası metni | `support/index.html` (EN) + `tr/destek/index.html` (TR) | Hayır (elle yazılıyor) |
 | **Ekran görüntüleri** | `assets/img/screens/*.jpg` (973×2048) — aynı adla değiştir | Hayır |
 | Uygulama ikonu | `assets/img/icon.png` | Hayır |
-| Arama motoru haritası | `sitemap.xml` | Hayır |
+| **Blog yazısı** ekle / düzenle | `_src/blog/en/<ad>.html` + `_src/blog/tr/<ad>.html` | **Evet** |
+| **Mağaza bağlantıları** (App Store, Google Play) | `assets/config.js` → `appStoreUrl`, `downloadUrl` | **Evet** |
+| **Kullanıcı / saat rakamları** (300+, 1.000+) | `assets/config.js` → `proof_*` ve `a8` (iki dilde) + "Neurofast nedir?" yazıları | **Evet** |
+| Arama motoru haritası | `sitemap.xml` — `build.py` üretir; elle yazılan sayfalar `build.py` içindeki `STATIC_PAGES` listesinde | **Evet** |
 
 > **Önemli:** `index.html` ve `tr/index.html` dosyaları **üretilmiş çıktıdır** —
 > onları elle düzenleme. Ana sayfa metnini değiştirmek için `assets/config.js`'i
@@ -86,10 +89,16 @@ Değişiklikten sonra **mutlaka** `python _src/build.py`.
 İki dili de güncellemeyi unutma (`privacy/` + `tr/gizlilik/`, ya da `support/` +
 `tr/destek/`). `build.py` gerekmez.
 
+**Yeni blog yazısı ekle:** `_src/blog/en/` içindeki bir yazıyı kopyala, dosya adını değiştir (dosya adı adres olur:
+`ornek-yazi.html` → `/blog/ornek-yazi/`). En üstteki yorum bloğunda `title`, `h1`, `description` (en fazla ~155
+karakter), `excerpt`, `date` satırlarını doldur. Türkçesini `_src/blog/tr/` içine yaz ve iki dosyada `pair:`
+satırına diğer dilin dosya adını (uzantısız) koy. Sonra `build.py` → önizle → push. Yazı blog listesine, ana
+sayfadaki blog bölümüne ve `sitemap.xml`'e kendiliğinden eklenir.
+
 **Yeni bir yasal/bilgi sayfası ekle** (ör. `kosullar/`): mevcut `support/index.html`'i
 kopyala, klasör aç (`kosullar/index.html`), başlığı/metni değiştir, `canonical` ve
-`hreflang` bağlantılarını yeni URL'e göre düzelt, `sitemap.xml`'e ekle. Elle yazılan
-sayfa olduğu için `build.py` gerekmez.
+`hreflang` bağlantılarını yeni URL'e göre düzelt, `_src/build.py` içindeki `STATIC_PAGES`
+listesine ekle ve `build.py` çalıştır (site haritasını o üretir).
 
 ---
 
